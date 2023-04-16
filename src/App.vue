@@ -1,6 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { blogStore } from './stores/blog'
+
+blogStore().fetchArticles()
 </script>
 
 <template>
