@@ -1,9 +1,3 @@
-<script setup>
-import { blogStore } from './stores/blog'
-
-blogStore().fetchArticles()
-</script>
-
 <template>
   <header>
     <div class="wrapper">
@@ -16,3 +10,9 @@ blogStore().fetchArticles()
 
   <RouterView />
 </template>
+
+<script setup>
+import { useBlogStore } from './stores/blog'
+
+useBlogStore().fetchPosts();
+</script>
