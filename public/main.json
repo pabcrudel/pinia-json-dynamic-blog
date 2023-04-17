@@ -10,7 +10,7 @@
             "description": "Aprende a utilizar Docker Compose para gestionar múltiples contenedores",
             "slug": "tutorial-docker-compose"
         },
-        "categories": null,
+        "categories": ["Docker Compose"],
         "content": "Docker Compose es una herramienta que te permite definir y gestionar aplicaciones multi-contenedor en Docker. Con Docker Compose, puedes definir un conjunto de contenedores relacionados en un archivo YAML y luego iniciarlos todos con un solo comando. En este tutorial, te enseñaremos a utilizar Docker Compose para gestionar tus contenedores de forma eficiente."
     },
     {
@@ -24,7 +24,7 @@
             "description": "Aprende a configurar la red de tus contenedores en Docker",
             "slug": "tutorial-docker-networking"
         },
-        "categories": null,
+        "categories": ["Docker Networking"],
         "content": "Una de las características más importantes de Docker es su capacidad para aislar contenedores. Sin embargo, también es importante que los contenedores puedan comunicarse entre sí para poder crear aplicaciones más complejas. En este tutorial, te enseñaremos cómo configurar la red de tus contenedores en Docker para que puedan comunicarse entre sí y con el host."
     },
     {
@@ -38,7 +38,7 @@
             "description": "Aprende a crear tu propio Dockerfile para personalizar tus contenedores",
             "slug": "tutorial-dockerfile"
         },
-        "categories": null,
+        "categories": ["Dockerfile"],
         "content": "Dockerfile es un archivo de texto que contiene todas las instrucciones necesarias para crear una imagen de Docker. Con un Dockerfile, puedes personalizar tus imágenes de contenedor para que se ajusten a tus necesidades específicas. En este tutorial, te enseñaremos cómo crear tu propio Dockerfile y cómo utilizarlo para construir imágenes de contenedor personalizadas."
     },
     {
@@ -52,7 +52,7 @@
             "description": "Aprende a utilizar Docker Swarm para orquestar tus contenedores en un clúster",
             "slug": "tutorial-docker-swarm"
         },
-        "categories": null,
+        "categories": ["Docker Swarm"],
         "content": "Docker Swarm es una herramienta que te permite orquestar tus contenedores en un clúster de Docker. Con Docker Swarm, puedes distribuir tus contenedores en múltiples hosts y escalarlos horizontalmente para manejar cargas de trabajo más grandes. En este tutorial, te enseñaremos cómo utilizar Docker Swarm para orquestar tus contenedores en un clúster"
     },
     {
@@ -118,5 +118,73 @@
             "Docker para Desarrollo Web"
         ],
         "content": "Laravel es un framework popular para la creación de aplicaciones web, pero configurar y mantener un entorno de Laravel puede ser un proceso complicado. Con Docker, puedes crear y configurar un entorno de Laravel completo en segundos, sin tener que preocuparte por la configuración o incompatibilidades. En este tutorial, te enseñaremos cómo utilizar Docker para crear una aplicación web con Laravel, desde cero."
+    },
+    {
+        "name": "introduccion-flutter",
+        "navigation": {
+            "title": "Introducción a Flutter: qué es y cómo empezar",
+            "cta": "Introducción"
+        },
+        "metadata": {
+            "title": "Introducción a Flutter: qué es y cómo empezar",
+            "description": "Aprende los conceptos básicos de Flutter",
+            "slug": "introduccion-flutter"
+        },
+        "categories": [
+            "Flutter",
+            "Mobile"
+        ],
+        "content": "Flutter es un framework de código abierto para desarrollar aplicaciones móviles. En este tutorial, te enseñaremos los conceptos básicos de Flutter, cómo funciona y cómo puedes empezar a utilizarlo para crear tus propias aplicaciones móviles."
+    },
+    {
+        "name": "flutter-widgets",
+        "navigation": {
+            "title": "Cómo utilizar los widgets de Flutter",
+            "cta": "Widgets"
+        },
+        "metadata": {
+            "title": "Tutorial de widgets de Flutter",
+            "description": "Aprende a utilizar los widgets de Flutter",
+            "slug": "tutorial-widgets-flutter"
+        },
+        "categories": [
+            "Flutter",
+            "Mobile"
+        ],
+        "content": "Los widgets son la base de las interfaces de usuario en Flutter. En este tutorial, te enseñaremos cómo utilizar los widgets de Flutter para construir interfaces de usuario hermosas y eficientes para tus aplicaciones móviles."
+    },
+    {
+        "name": "introduccion-nodejs",
+        "navigation": {
+            "title": "Introducción a Node.js: qué es y cómo empezar",
+            "cta": "Introducción"
+        },
+        "metadata": {
+            "title": "Introducción a Node.js: qué es y cómo empezar",
+            "description": "Aprende los conceptos básicos de Node.js",
+            "slug": "introduccion-nodejs"
+        },
+        "categories": [
+            "Node.js",
+            "Backend"
+        ],
+        "content": "Node.js es una plataforma de software libre para el desarrollo de aplicaciones en el lado del servidor. En este tutorial, te enseñaremos los conceptos básicos de Node.js, cómo funciona y cómo puedes empezar a utilizarlo para construir tus propias aplicaciones de servidor."
+    },
+    {
+        "name": "nodejs-express",
+        "navigation": {
+            "title": "Cómo utilizar Express con Node.js",
+            "cta": "Express"
+        },
+        "metadata": {
+            "title": "Tutorial de Express con Node.js",
+            "description": "Aprende a utilizar Express con Node.js",
+            "slug": "tutorial-express-nodejs"
+        },
+        "categories": [
+            "Node.js",
+            "Backend"
+        ],
+        "content": "Express es un framework para Node.js que facilita la creación de aplicaciones web. En este tutorial, te enseñaremos cómo utilizar Express con Node.js para construir tus propias aplicaciones web."
     }
 ]
