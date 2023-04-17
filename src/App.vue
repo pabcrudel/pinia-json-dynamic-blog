@@ -8,7 +8,7 @@
     </div>
   </header>
 
-  <template v-if="!useBlogStore.loading">
+  <template v-if="!blogStore.loading && blogStore.error === null">
     <RouterView />
   </template>
 </template>
@@ -17,4 +17,6 @@
 import { useBlogStore } from './stores/blog'
 
 useBlogStore().fetchPosts();
+
+const blogStore = useBlogStore();
 </script>
