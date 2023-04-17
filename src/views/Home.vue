@@ -10,7 +10,7 @@
     <hr>
     <p v-for="post in blogStore.getUnrelatedPostsByCategory('moBile')" :key="post.name" v-html="post.navigation.title"/>
     <hr>
-    <p v-html="blogStore.getPostByName('docker-swarm').navigation.title"/>
+    <p v-html="blogStore.getPostByName('docker-swarm') ? blogStore.getPostByName('docker-swarm').navigation.title : ''"/>
     <hr>
   </div>
 </template>
