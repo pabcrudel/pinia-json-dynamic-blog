@@ -8,7 +8,9 @@
     </div>
   </header>
 
-  <RouterView />
+  <template v-if="!useBlogStore.loading">
+    <RouterView />
+  </template>
 </template>
 
 <script setup>
