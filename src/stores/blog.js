@@ -51,9 +51,19 @@ export const useBlogStore = defineStore({
                 return matchedPosts;
             };
         },
+        getPostByName: (state) => {
+            return (_name) => {
+                return state.posts.find(post => post.name === _name);
+            };
+        },
         getRelatedPostsByCategory: (state) => {
             return (_category) => {
                 return state.posts.filter(post => post.categories.find(category => category.toLowerCase() === _category.toLowerCase()));
+            };
+        },
+        getUnrelatedPostsByCategory: (state) => {
+            return (_category) => {
+                return state.posts.filter(post => !post.categories.find(category => category.toLowerCase() === _category.toLowerCase()));
             };
         },
     },
