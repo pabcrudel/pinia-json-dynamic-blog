@@ -2,10 +2,14 @@
     <h1 v-html="post.navigation.title" />
     <hr>
     <p v-html="post.content" />
+    <template v-if="relatedPosts.size > 0">
+        <hr>
+        <LinkedPostList :title="'Articulos Relacionados'" :posts="relatedPosts" />
+    </template>
     <hr>
-    <LinkedPostList :title="'Articulos Relacionados'" :posts="blogStore.getPostsByCategories(post.categories)"/>
+    <LinkedPostList :title="'Otros articulos que podrian interesarte'"
+        :posts="blogStore.getPostsByCategories(post.categories, false)" />
     <hr>
-    <LinkedPostList :title="'Otros articulos que podrian interesarte'" :posts="blogStore.getPostsByCategories(post.categories, false)"/>
 </template>
 
 <script setup>
@@ -18,4 +22,5 @@ const route = useRoute();
 
 const blogStore = useBlogStore();
 const post = blogStore.getPostBySlug(route.params.slug);
+const relatedPosts = blogStore.getRelatedPosts(post);
 </script>
