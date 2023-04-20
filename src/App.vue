@@ -20,9 +20,10 @@ const blogStore = useBlogStore();
 blogStore.fetchPosts()
 </script>
 
-<style scoped>
+<style>
 nav {
   display: flex;
   gap: 1rem;
 }
+hr {margin: 1rem 0;}
 </style>
