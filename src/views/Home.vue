@@ -4,17 +4,27 @@
 
     <hr>
     <h2>Categories</h2>
-    <p v-for="(category, index) in blogStore.categories" :key="index" v-html="category" />
+    <RouterLink v-for="(category, index) in blogStore.categories" :key="index" v-html="category"
+      :to="`/blog#${normalizeString(category)}`" />
     <hr>
   </div>
 </template>
 
 <script setup>
 import { useBlogStore } from '../stores/blog';
+import useStringEditor from '../composables/useStringEditor';
 
 const blogStore = useBlogStore();
+
+const { normalizeString } = useStringEditor();
 </script>
 
 <style scoped>
-h2 {text-decoration: underline lightblue;}
+h2 {
+  text-decoration: underline lightblue;
+}
+
+a {
+  display: block;
+}
 </style>
