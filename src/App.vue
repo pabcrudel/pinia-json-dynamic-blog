@@ -8,29 +8,16 @@
     </div>
   </header>
 
-  <p v-if="blogStore.loading" v-html="'Loading...'"/>
-  <p v-else-if="blogStore.error != null" v-html="'Error'"/>
-  <RouterView v-else :key="$route.fullPath"/>
+  <p v-if="blogStore.isLoading" v-html="'Loading...'" />
+  <p v-else-if="blogStore.error != null" v-html="'Error'" />
+  <RouterView v-else :key="$route.fullPath" />
 </template>
 
 <script setup>
-import { onUpdated } from 'vue';
 import { useBlogStore } from './stores/blog'
 
-import {useRoute} from 'vue-router';
-const route = useRoute();
-
-useBlogStore().fetchPosts();
-
 const blogStore = useBlogStore();
-
-// console.log(!blogStore.loading && blogStore.error === null)
-// console.log("error", blogStore.error)
-// console.log("loading", blogStore.loading)
-
-onUpdated(() => {
-  console.log(route.fullPath)
-})
+blogStore.fetchPosts()
 </script>
 
 <style scoped>
