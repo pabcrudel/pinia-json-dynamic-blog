@@ -5,10 +5,7 @@
     <hr>
     <h2>Search bar</h2>
     <input type="search" name="search" id="search" v-model="search">
-    <div class="results">
-      <RouterLink v-for="post in blogStore.searchPosts(search)" :key="post.name" v-html="post.navigation.title"
-        :to="'/' + post.metadata.slug" />
-    </div>
+    <LinkedPostList :posts="blogStore.searchPosts(search)"/>
     <hr>
 
     <h2>Categories</h2>
@@ -16,11 +13,11 @@
     <hr>
 
     <h2>Related post</h2>
-    <p v-for="post in blogStore.getRelatedPostsByCategory('moBile')" :key="post.name" v-html="post.navigation.title" />
+    <p v-for="post in blogStore.getPostsByCategory('moBile')" :key="post.name" v-html="post.navigation.title" />
     <hr>
 
     <h2>Unrelated posts</h2>
-    <p v-for="post in blogStore.getUnrelatedPostsByCategory('moBile')" :key="post.name" v-html="post.navigation.title" />
+    <p v-for="post in blogStore.getPostsByCategory('moBile', false)" :key="post.name" v-html="post.navigation.title" />
     <hr>
   </div>
 </template>
@@ -29,22 +26,13 @@
 import { ref } from 'vue';
 import { useBlogStore } from '../stores/blog';
 
+import LinkedPostList from '../components/LinkedPostList .vue';
+
 const blogStore = useBlogStore();
 
 let search = ref("");
 </script>
 
 <style scoped>
-hr {
-  margin: 1rem 0;
-}
-
-h2 {
-  text-decoration: underline lightblue;
-}
-
-.results {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-}</style>
+h2 {text-decoration: underline lightblue;}
+</style>
