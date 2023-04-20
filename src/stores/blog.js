@@ -53,7 +53,7 @@ export const useBlogStore = defineStore({
     },
     getters: {
         /**
-         * The function searches through an array of posts and returns any posts that contain all or some of the search terms. 
+         * The function searches through an array of posts and returns a `Set` of matched posts that contain all or some of the search terms. 
          * @param searchTerm - The search term that the user is looking for in the posts. It is converted to lowercase and split into an array of individual words for easier comparison with the content of the posts.
          * @returns The function `searchPosts` is returning an array of posts that match the search term provided as an argument. The posts are filtered based on whether their content includes every or some of the search terms provided.
          */
@@ -61,18 +61,18 @@ export const useBlogStore = defineStore({
             return (searchTerm) => {
                 const terms = searchTerm.toLowerCase().split(" ");
 
+                const matchedPosts = new Set();
+
                 function getPostBySearchType(searchType) {
-                    return state.posts.filter(post => {
+                    state.posts.forEach(post => {
                         const allPostValues = Object.values(post).join(" ").toLowerCase();
-                        return terms[searchType](term => allPostValues.match(term));
+
+                        if (terms[searchType](term => allPostValues.match(term))) matchedPosts.add(post);
                     });
                 }
+                getPostBySearchType("every");
 
-                let matchedPosts = getPostBySearchType("every");
-
-                if (matchedPosts.length === 0) {
-                    matchedPosts = getPostBySearchType("some");
-                }
+                if (matchedPosts.size === 0) getPostBySearchType("some");
 
                 return matchedPosts;
             };
