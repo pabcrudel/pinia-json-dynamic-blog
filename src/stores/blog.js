@@ -86,11 +86,13 @@ export const useBlogStore = defineStore({
             return (_category, related = true) => {
                 const findCategory = (categories) => categories.find(category => category.toLowerCase() === _category.toLowerCase());
 
-                return state.posts.filter(post => {
+                const filteredPosts = new Set([...state.posts.filter(post => {
                     return related ?
                         findCategory(post.categories) :
                         !findCategory(post.categories)
-                });
+                })]);
+
+                return filteredPosts;
             };
         },
         getPostsByCategories: (getters) => {
