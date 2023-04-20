@@ -9,7 +9,7 @@ export const useBlogStore = defineStore({
         posts: [],
         categories: new Set(),
         slugs: new Set(),
-        loading: true,
+        isLoading: true,
         error: null,
     }),
     actions: {
@@ -18,24 +18,25 @@ export const useBlogStore = defineStore({
                 const response = await axios.get('/main.json');
                 this.posts = response.data;
 
-                this.posts.map(post => {
-                    post.categories.map(category => this.categories.add(category));
-
-                    this.slugs.add(post.metadata.slug);
-                });
+                this.storeCategoriesAndSlugs();
             }
             catch (error) {
                 console.log(error)
                 this.error = error;
             } 
-            finally {this.loading = false;};
+            finally {this.isLoading = false;};
+        },
+        storeCategoriesAndSlugs() {
+            this.posts.map(post => {
+                post.categories.map(category => this.categories.add(category));
+
+                this.slugs.add(post.metadata.slug);
+            });
         },
         beforeEnter(to, next) {
-            if (this.loading) {
-                this.$onAction(({after, store, name}) => {
-                    after(() => {
-                        if (name === 'fetchPosts') this.isValidSlug(to, next);
-                    })
+            if (this.isLoading) {
+                this.$onAction(({after, name}) => {
+                    if (name === 'storeCategoriesAndSlugs') after(() => this.isValidSlug(to, next));
                 });
             }
             else this.isValidSlug(to, next);
