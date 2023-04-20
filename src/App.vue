@@ -19,6 +19,10 @@ import { useBlogStore } from './stores/blog'
 useBlogStore().fetchPosts();
 
 const blogStore = useBlogStore();
+
+console.log(!blogStore.loading && blogStore.error === null)
+console.log("error", blogStore.error)
+console.log("loading", blogStore.loading)
 </script>
 
 <style scoped>
