@@ -8,9 +8,9 @@
     </div>
   </header>
 
-  <template v-if="!blogStore.loading && blogStore.error === null">
-    <RouterView />
-  </template>
+  <p v-if="blogStore.loading" v-html="'Loading...'"/>
+  <p v-else-if="blogStore.error != null" v-html="'Error'"/>
+  <RouterView v-else/>
 </template>
 
 <script setup>
@@ -20,3 +20,10 @@ useBlogStore().fetchPosts();
 
 const blogStore = useBlogStore();
 </script>
+
+<style scoped>
+nav {
+  display: flex;
+  gap: 1rem;
+}
+</style>
