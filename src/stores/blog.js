@@ -23,8 +23,8 @@ export const useBlogStore = defineStore({
             catch (error) {
                 console.log(error)
                 this.error = error;
-            } 
-            finally {this.isLoading = false;};
+            }
+            finally { this.isLoading = false; };
         },
         storeCategoriesAndSlugs() {
             this.posts.map(post => {
@@ -35,7 +35,7 @@ export const useBlogStore = defineStore({
         },
         beforeEnter(to, next) {
             if (this.isLoading) {
-                this.$onAction(({after, name}) => {
+                this.$onAction(({ after, name }) => {
                     if (name === 'storeCategoriesAndSlugs') after(() => this.isValidSlug(to, next));
                 });
             }
@@ -82,15 +82,27 @@ export const useBlogStore = defineStore({
                 return state.posts.find(post => post.metadata.slug === _slug);
             };
         },
-        getRelatedPostsByCategory: (state) => {
-            return (_category) => {
-                return state.posts.filter(post => post.categories.find(category => category.toLowerCase() === _category.toLowerCase()));
+        getPostsByCategory: (state) => {
+            return (_category, related = true) => {
+                const findCategory = (categories) => categories.find(category => category.toLowerCase() === _category.toLowerCase());
+
+                return state.posts.filter(post => {
+                    return related ?
+                        findCategory(post.categories) :
+                        !findCategory(post.categories)
+                });
             };
         },
-        getUnrelatedPostsByCategory: (state) => {
-            return (_category) => {
-                return state.posts.filter(post => !post.categories.find(category => category.toLowerCase() === _category.toLowerCase()));
-            };
+        getPostsByCategories: (getters) => {
+            return (_categories, related = true) => {
+                const filteredPosts = new Set();
+
+                _categories.forEach(category => {
+                    getters.getPostsByCategory(category, related).forEach(post => filteredPosts.add(post));
+                });
+
+                return filteredPosts;
+            }
         },
     },
 });
