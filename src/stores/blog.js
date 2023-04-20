@@ -1,11 +1,14 @@
 import { defineStore } from 'pinia';
 import axios from 'axios';
 
+import router from '../router/index';
+
 export const useBlogStore = defineStore({
     id: 'blog',
     state: () => ({
         posts: [],
         categories: new Set(),
+        slugs: new Set(),
         loading: true,
         error: null,
     }),
@@ -15,15 +18,37 @@ export const useBlogStore = defineStore({
                 const response = await axios.get('/main.json');
                 this.posts = response.data;
 
-                this.posts.map(post => post.categories.map(category => this.categories.add(category)));
+                this.posts.map(post => {
+                    post.categories.map(category => this.categories.add(category));
+
+                    this.slugs.add(post.metadata.slug);
+                });
             }
             catch (error) {
                 console.log(error)
                 this.error = error;
-            };
-
-            this.loading = false;
+            } 
+            finally {this.loading = false;};
         },
+        beforeEnter(to, next) {
+            if (this.loading) {
+                this.$onAction(({after, store, name}) => {
+                    after(() => {
+                        if (name === 'fetchPosts') this.isValidSlug(to, next);
+                    })
+                });
+            }
+            else this.isValidSlug(to, next);
+        },
+        isValidSlug(to, next) {
+            if (this.slugs.has(to.params.slug)) next()
+            else {
+                router.push({
+                    name: 'home',
+                    replace: true,
+                });
+            };
+        }
     },
     getters: {
         /**
@@ -51,9 +76,9 @@ export const useBlogStore = defineStore({
                 return matchedPosts;
             };
         },
-        getPostByName: (state) => {
-            return (_name) => {
-                return state.posts.find(post => post.name === _name);
+        getPostBySlug: (state) => {
+            return (_slug) => {
+                return state.posts.find(post => post.metadata.slug === _slug);
             };
         },
         getRelatedPostsByCategory: (state) => {
