@@ -82,6 +82,13 @@ export const useBlogStore = defineStore({
                 return state.posts.find(post => post.metadata.slug === _slug);
             };
         },
+        getRelatedPosts: (state) => {
+            return (_post) => {
+                return new Set([...state.posts.filter(post => {
+                    return post.categories.some(category => _post.categories.includes(category)) && post.name != _post.name;
+                })]);
+            };
+        },
         getPostsByCategory: (state) => {
             return (_category, related = true) => {
                 const findCategory = (categories) => categories.find(category => category.toLowerCase() === _category.toLowerCase());
