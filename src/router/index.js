@@ -16,6 +16,12 @@ const router = createRouter({
       component: () => import('../views/Blog.vue')
     },
     {
+      path: '/:searchTerm',
+      redirect: to => {
+        return { path: '/blog', query: { searchterm: to.params.searchTerm } }
+      }
+    },
+    {
       path: '/:category/:slug',
       name: 'post',
       component: () => import('../views/Post.vue'),
