@@ -6,6 +6,8 @@ export default function useStringEditor() {
       .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
       // sustituir espacios por guiones "-"
       .replace(/ /g, '-')
+      // eliminar puntos
+      .replace(/\./g, "")
       // poner todo a minusculas
       .toLowerCase();
   };
