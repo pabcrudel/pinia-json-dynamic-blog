@@ -7,8 +7,7 @@
         <LinkedPostList :title="'Articulos Relacionados'" :posts="relatedPosts" />
     </template>
     <hr>
-    <LinkedPostList :title="'Otros articulos que podrian interesarte'"
-        :posts="blogStore.getPostsByCategories(post.categories, false)" />
+    <LinkedPostList :title="'Otros articulos que podrian interesarte'" :posts="unrelatedPosts" />
     <hr>
 </template>
 
@@ -23,4 +22,5 @@ const route = useRoute();
 const blogStore = useBlogStore();
 const post = blogStore.getPostBySlug(route.params.slug);
 const relatedPosts = blogStore.getRelatedPosts(post);
+const unrelatedPosts = blogStore.getPostsByCategory(post.category, false);
 </script>

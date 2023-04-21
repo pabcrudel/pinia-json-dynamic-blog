@@ -8,6 +8,7 @@ export const useBlogStore = defineStore({
     state: () => ({
         posts: [],
         categories: new Set(),
+        tags: new Set(),
         slugs: new Set(),
         isLoading: true,
         error: null,
@@ -15,7 +16,7 @@ export const useBlogStore = defineStore({
     actions: {
         async fetchPosts() {
             try {
-                const response = await axios.get('/main.json');
+                const response = await axios.get('/posts.json');
                 this.posts = response.data;
 
                 this.storeCategoriesAndSlugs();
@@ -28,7 +29,9 @@ export const useBlogStore = defineStore({
         },
         storeCategoriesAndSlugs() {
             this.posts.map(post => {
-                post.categories.map(category => this.categories.add(category));
+                this.categories.add(post.category);
+
+                post.tags.forEach(tag => this.tags.add(tag));
 
                 this.slugs.add(post.metadata.slug);
             });
@@ -85,33 +88,20 @@ export const useBlogStore = defineStore({
         getRelatedPosts: (state) => {
             return (_post) => {
                 return new Set([...state.posts.filter(post => {
-                    return post.categories.some(category => _post.categories.includes(category)) && post.name != _post.name;
+                    return post.category === _post.category && post.name != _post.name;
                 })]);
             };
         },
         getPostsByCategory: (state) => {
             return (_category, related = true) => {
-                const findCategory = (categories) => categories.find(category => category.toLowerCase() === _category.toLowerCase());
-
                 const filteredPosts = new Set([...state.posts.filter(post => {
                     return related ?
-                        findCategory(post.categories) :
-                        !findCategory(post.categories)
+                        post.category === _category :
+                        post.category != _category
                 })]);
 
                 return filteredPosts;
             };
-        },
-        getPostsByCategories: (getters) => {
-            return (_categories, related = true) => {
-                const filteredPosts = new Set();
-
-                _categories.forEach(category => {
-                    getters.getPostsByCategory(category, related).forEach(post => filteredPosts.add(post));
-                });
-
-                return filteredPosts;
-            }
-        },
+        }
     },
 });

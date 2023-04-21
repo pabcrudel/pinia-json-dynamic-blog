@@ -7,6 +7,10 @@
     <RouterLink v-for="(category, index) in blogStore.categories" :key="index" v-html="category"
       :to="{ name: 'blog', query: { searchterm: normalizeString(category) } }" />
     <hr>
+    <h2>Etiquetas</h2>
+    <RouterLink v-for="(tag, index) in blogStore.tags" :key="index" v-html="tag"
+      :to="{ name: 'blog', query: { searchterm: normalizeString(tag) } }" />
+    <hr>
   </div>
 </template>
 
