@@ -9,7 +9,7 @@
         "metadata": {
             "title": "Tutorial de Vue.js",
             "description": "Aprende los conceptos básicos de Vue.js para construir aplicaciones web interactivas",
-            "slug": "tutorial-vuejs-basics"
+            "slug": "vuejs-basics"
         },
         "category": "Vue.js",
         "tags": [
@@ -29,7 +29,7 @@
         "metadata": {
             "title": "Tutorial de Vue.js",
             "description": "Aprende a crear componentes reutilizables en Vue.js para mejorar la modularidad y la escalabilidad de tus aplicaciones",
-            "slug": "tutorial-vuejs-components"
+            "slug": "vuejs-components"
         },
         "category": "Vue.js",
         "tags": [
@@ -49,7 +49,7 @@
         "metadata": {
             "title": "Tutorial de Vue.js",
             "description": "Aprende a utilizar el enrutamiento en Vue.js para crear aplicaciones de página única (SPA) y mejorar la experiencia del usuario",
-            "slug": "tutorial-vuejs-routing"
+            "slug": "vuejs-routing"
         },
         "category": "Vue.js",
         "tags": [
@@ -69,7 +69,7 @@
         "metadata": {
             "title": "Tutorial de WebSockets en Node.js",
             "description": "Aprende a utilizar WebSockets en Node.js para crear aplicaciones en tiempo real",
-            "slug": "tutorial-nodejs-websockets"
+            "slug": "nodejs-websockets"
         },
         "category": "Node.js",
         "tags": [
@@ -90,7 +90,7 @@
         "metadata": {
             "title": "Tutorial de API RESTful con Express en Node.js",
             "description": "Aprende a crear una API RESTful con Express en Node.js",
-            "slug": "tutorial-nodejs-express"
+            "slug": "nodejs-express"
         },
         "category": "Node.js",
         "tags": [
@@ -111,7 +111,7 @@
         "metadata": {
             "title": "Tutorial de servidor HTTP en Node.js",
             "description": "Aprende a crear un servidor HTTP básico en Node.js",
-            "slug": "tutorial-nodejs-http"
+            "slug": "nodejs-http"
         },
         "category": "Node.js",
         "tags": [
@@ -131,7 +131,7 @@
         "metadata": {
             "title": "Tutorial de CI/CD con Docker",
             "description": "Aprende a utilizar Docker en tu pipeline de CI/CD",
-            "slug": "tutorial-docker-ci-cd"
+            "slug": "docker-ci-cd"
         },
         "category": "Docker",
         "tags": [
@@ -152,7 +152,7 @@
         "metadata": {
             "title": "Tutorial de seguridad en Docker",
             "description": "Aprende a mejorar la seguridad de tus aplicaciones con Docker",
-            "slug": "tutorial-docker-security"
+            "slug": "docker-security"
         },
         "category": "Docker",
         "tags": [
@@ -172,7 +172,7 @@
         "metadata": {
             "title": "Tutorial de Docker y Nginx",
             "description": "Aprende a utilizar Docker para configurar un servidor web con Nginx",
-            "slug": "tutorial-docker-nginx"
+            "slug": "docker-nginx"
         },
         "category": "Docker",
         "tags": [
