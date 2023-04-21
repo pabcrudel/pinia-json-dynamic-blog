@@ -20,7 +20,7 @@ import LinkedPostList from '../components/LinkedPostList .vue';
 const route = useRoute();
 
 const blogStore = useBlogStore();
-const post = blogStore.getPostBySlug(route.params.slug);
+const post = blogStore.getPostByPath(route.fullPath);
 const relatedPosts = blogStore.getRelatedPosts(post);
 const unrelatedPosts = blogStore.getPostsByCategory(post.category, false);
 </script>
