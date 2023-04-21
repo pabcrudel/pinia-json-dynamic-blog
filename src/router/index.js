@@ -16,7 +16,7 @@ const router = createRouter({
       component: () => import('../views/Blog.vue')
     },
     {
-      path: '/:slug',
+      path: '/:category/:slug',
       name: 'post',
       component: () => import('../views/Post.vue'),
       beforeEnter: (to, from, next) => useBlogStore().beforeEnter(to, next),
