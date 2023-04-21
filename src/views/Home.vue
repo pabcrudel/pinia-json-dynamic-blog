@@ -5,7 +5,7 @@
     <hr>
     <h2>Categories</h2>
     <RouterLink v-for="(category, index) in blogStore.categories" :key="index" v-html="category"
-    :to="{name: 'blog', query: {searchterm: normalizeString(category)}}" />
+      :to="{ name: 'blog', query: { searchterm: normalizeString(category) } }" />
     <hr>
   </div>
 </template>
