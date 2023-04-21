@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { useBlogStore } from '../stores/blog';
 import useStringEditor from '../composables/useStringEditor';
@@ -20,11 +20,7 @@ const route = useRoute();
 
 const { capitalizeFirstLetterAndReplaceDash } = useStringEditor();
 
-const hash = computed(() => {
-  return capitalizeFirstLetterAndReplaceDash(route.hash.replace(/#/g, ''));
-});
-
 const blogStore = useBlogStore();
 
-const search = ref("" || hash);
+const search = ref(route.query.searchterm ? capitalizeFirstLetterAndReplaceDash(route.query.searchterm.replace(/#/g, '')) : "");
 </script>
