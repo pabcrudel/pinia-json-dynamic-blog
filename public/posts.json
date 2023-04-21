@@ -133,11 +133,12 @@
             "description": "Aprende a utilizar Docker en tu pipeline de CI/CD",
             "slug": "tutorial-docker-ci-cd"
         },
-        "category": "DevOps",
+        "category": "Docker",
         "tags": [
             "Docker",
             "CI/CD",
-            "Pipeline"
+            "Pipeline",
+            "DevOps"
         ],
         "content": "En este tutorial, te enseñaremos cómo utilizar Docker en tu pipeline de CI/CD. Verás cómo utilizar Docker para construir imágenes de contenedor y cómo utilizar Docker Compose para definir tus servicios de aplicaciones. También verás cómo integrar Docker en tu pipeline de CI/CD utilizando herramientas como Jenkins o GitLab CI/CD. Al final, tendrás una comprensión sólida de cómo Docker puede mejorar la eficiencia y la calidad de tu pipeline de CI/CD."
     },
@@ -153,10 +154,10 @@
             "description": "Aprende a mejorar la seguridad de tus aplicaciones con Docker",
             "slug": "tutorial-docker-security"
         },
-        "category": "Seguridad informática",
+        "category": "Docker",
         "tags": [
             "Docker",
-            "Seguridad",
+            "Seguridad informática",
             "Contenedores"
         ],
         "content": "En este tutorial, te enseñaremos cómo mejorar la seguridad de tus aplicaciones con Docker. Verás cómo configurar tu red y tus contenedores para limitar el acceso no autorizado, cómo utilizar volúmenes de datos cifrados y cómo configurar Docker para que funcione con TLS. También verás algunas mejores prácticas para la seguridad de contenedores y cómo utilizar herramientas de análisis de vulnerabilidades."
@@ -173,11 +174,12 @@
             "description": "Aprende a utilizar Docker para configurar un servidor web con Nginx",
             "slug": "tutorial-docker-nginx"
         },
-        "category": "Desarrollo web",
+        "category": "Docker",
         "tags": [
             "Docker",
             "Nginx",
-            "Servidor web"
+            "Servidor web",
+            "Desarrollo web"
         ],
         "content": "En este tutorial, te enseñaremos cómo utilizar Docker para configurar un servidor web con Nginx. Verás cómo crear y configurar un contenedor de Nginx, cómo exponer los puertos necesarios y cómo montar los archivos de configuración del servidor. También verás cómo utilizar Docker Compose para definir y gestionar tu aplicación multi-contenedor."
     }
