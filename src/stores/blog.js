@@ -6,7 +6,7 @@ import useStringEditor from '../composables/useStringEditor';
 export const useBlogStore = defineStore({
     id: 'blog',
     state: () => ({
-        posts: [],
+        posts: new Set(),
         categories: new Set(),
         tags: new Set(),
         paths: new Set(),
@@ -17,7 +17,7 @@ export const useBlogStore = defineStore({
         async fetchPosts() {
             try {
                 const response = await axios.get('/posts.json');
-                this.posts = response.data;
+                response.data.forEach(post => this.posts.add(post));
 
                 this.storeCategoriesAndPaths();
             }
@@ -28,7 +28,7 @@ export const useBlogStore = defineStore({
             finally { this.isLoading = false; };
         },
         storeCategoriesAndPaths() {
-            this.posts.map(post => {
+            this.posts.forEach(post => {
                 this.categories.add(post.category);
 
                 post.tags.forEach(tag => this.tags.add(tag));
