@@ -85,16 +85,16 @@ export const useBlogStore = defineStore({
                 })]);
             };
         },
-        getPostsByCategory: (state) => {
-            return (_category, related = true) => {
+        getPostsByProp: (state) => {
+            return (prop, value, related = true) => {
                 const filteredPosts = new Set([...state.posts.filter(post => {
                     return related ?
-                        post.category === _category :
-                        post.category != _category
+                        post[prop] === value :
+                        post[prop] != value
                 })]);
 
                 return filteredPosts;
             };
-        }
+        },
     },
 });
