@@ -3,13 +3,15 @@
 
     <hr>
     <h2>¿Que estas buscando?</h2>
-    <input type="search" name="search" id="search" v-model="search" style="width: 320px;">
-    <LinkedPostList :posts="blogStore.searchPosts(search)" />
+    <input type="search" name="search" id="search" v-model="searchTerm" style="width: 320px;">
+    <LinkedPostList v-if="result.size > 0" :posts="result" />
+    <p v-else>No hay nada...</p>
     <hr>
+    <LinkedPostList v-if="result.size === 0" :title="'Otros articulos que podrian interesarte'" :posts="blogStore.posts" />
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { useBlogStore } from '../stores/blog';
 import useStringEditor from '../composables/useStringEditor';
@@ -22,5 +24,9 @@ const { capitalizeFirstLetterAndReplaceDash } = useStringEditor();
 
 const blogStore = useBlogStore();
 
-const search = ref(route.query.searchterm ? capitalizeFirstLetterAndReplaceDash(route.query.searchterm.replace(/#/g, '')) : "");
+const searchTerm = ref(route.query.searchterm ? capitalizeFirstLetterAndReplaceDash(route.query.searchterm.replace(/#/g, '')) : "");
+
+const result = computed(() => {
+  return blogStore.searchPosts(searchTerm.value);
+});
 </script>
