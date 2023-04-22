@@ -25,7 +25,17 @@ const router = createRouter({
       path: '/:category/:slug',
       name: 'post',
       component: () => import('../views/Post.vue'),
-      beforeEnter: (to, from, next) => useBlogStore().beforeEnter(to, next),
+      beforeEnter: async (to, from, next) => {
+        await useBlogStore().awaitDataLoading();
+
+        if (useBlogStore().paths.has(to.fullPath)) next();
+        else {
+          next({
+            name: 'home',
+            replace: true,
+          });
+        };
+      },
     }
   ]
 })

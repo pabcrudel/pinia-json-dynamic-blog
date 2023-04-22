@@ -3,8 +3,6 @@ import axios from 'axios';
 
 import useStringEditor from '../composables/useStringEditor';
 
-import router from '../router/index';
-
 export const useBlogStore = defineStore({
     id: 'blog',
     state: () => ({
@@ -35,24 +33,16 @@ export const useBlogStore = defineStore({
 
                 post.tags.forEach(tag => this.tags.add(tag));
 
-                Object.assign(post, {path: `/${useStringEditor().normalizeString(post.category)}/${post.metadata.slug}`});
+                Object.assign(post, { path: `/${useStringEditor().normalizeString(post.category)}/${post.metadata.slug}` });
                 this.paths.add(post.path)
             });
         },
-        beforeEnter(to, next) {
+        async awaitDataLoading() {
             if (this.isLoading) {
-                this.$onAction(({ after, name }) => {
-                    if (name === 'storeCategoriesAndPaths') after(() => this.isValidSlug(to, next));
-                });
-            }
-            else this.isValidSlug(to, next);
-        },
-        isValidSlug(to, next) {
-            if (this.paths.has(to.fullPath)) next()
-            else {
-                router.push({
-                    name: 'home',
-                    replace: true,
+                await new Promise((resolve) => {
+                    this.$onAction(({ after, name }) => {
+                        if (name === 'storeCategoriesAndPaths') after(() => resolve());
+                    });
                 });
             };
         }
