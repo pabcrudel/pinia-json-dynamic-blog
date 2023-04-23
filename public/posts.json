@@ -1,9 +1,9 @@
 [
     {
         "name": "basics",
-        "title": "Introducción a Vue.js",
+        "title": "Aprende los conceptos básicos de Vue.js",
         "navigation": {
-            "title": "Aprende los conceptos básicos de Vue.js",
+            "title": "Introducción a Vue.js",
             "cta": "Vue.js"
         },
         "metadata": {
@@ -41,9 +41,9 @@
     },
     {
         "name": "routing",
-        "title": "Enrutamiento en Vue.js",
+        "title": "Cómo utilizar el enrutamiento en Vue.js",
         "navigation": {
-            "title": "Cómo utilizar el enrutamiento en Vue.js",
+            "title": "Enrutamiento en Vue.js",
             "cta": "Vue.js"
         },
         "metadata": {
