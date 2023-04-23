@@ -1,0 +1,186 @@
+[
+    {
+        "name": "basics",
+        "title": "Aprende los conceptos básicos de Vue.js",
+        "navigation": {
+            "title": "Introducción a Vue.js",
+            "cta": "Vue.js"
+        },
+        "metadata": {
+            "title": "Tutorial de Vue.js",
+            "description": "Aprende los conceptos básicos de Vue.js para construir aplicaciones web interactivas",
+            "slug": "basics"
+        },
+        "category": "Vue.js",
+        "tags": [
+            "Frontend",
+            "JavasCript",
+            "Web development"
+        ],
+        "content": "Vue.js es un framework de JavaScript para construir interfaces de usuario interactivas y complejas. En este tutorial, aprenderás los conceptos básicos de Vue.js, incluyendo cómo definir componentes, enlazar datos y eventos, y usar directivas para actualizar la interfaz de usuario en tiempo real. También verás cómo utilizar Vue.js junto con otras herramientas de desarrollo web para crear aplicaciones completas y escalables."
+    },
+    {
+        "name": "components",
+        "title": "Creando componentes en Vue.js",
+        "navigation": {
+            "title": "Cómo crear componentes reutilizables en Vue.js",
+            "cta": "Vue.js"
+        },
+        "metadata": {
+            "title": "Tutorial de Vue.js",
+            "description": "Aprende a crear componentes reutilizables en Vue.js para mejorar la modularidad y la escalabilidad de tus aplicaciones",
+            "slug": "components"
+        },
+        "category": "Vue.js",
+        "tags": [
+            "Frontend",
+            "JavasCript",
+            "Web development"
+        ],
+        "content": "Los componentes son la base de la arquitectura de Vue.js. En este tutorial, aprenderás cómo crear componentes reutilizables en Vue.js, incluyendo cómo definir las propiedades, manejar eventos y utilizar slots para crear componentes más flexibles. También verás cómo utilizar los componentes en una aplicación de Vue.js y cómo estructurar la aplicación en un conjunto de componentes interconectados."
+    },
+    {
+        "name": "routing",
+        "title": "Cómo utilizar el enrutamiento en Vue.js",
+        "navigation": {
+            "title": "Enrutamiento en Vue.js",
+            "cta": "Vue.js"
+        },
+        "metadata": {
+            "title": "Tutorial de Vue.js",
+            "description": "Aprende a utilizar el enrutamiento en Vue.js para crear aplicaciones de página única (SPA) y mejorar la experiencia del usuario",
+            "slug": "routing"
+        },
+        "category": "Vue.js",
+        "tags": [
+            "Frontend",
+            "JavasCript",
+            "Web development"
+        ],
+        "content": "El enrutamiento es una parte fundamental de las aplicaciones web de página única (SPA). En este tutorial, aprenderás cómo utilizar el enrutamiento en Vue.js para crear aplicaciones de SPA y mejorar la experiencia del usuario. Verás cómo definir rutas, pasar parámetros y navegar entre páginas en una aplicación de Vue.js. También verás cómo utilizar el enrutamiento junto con otros conceptos de Vue.js, como la gestión de estados y los componentes, para crear aplicaciones más complejas y escalables."
+    },
+    {
+        "name": "sockets",
+        "title": "Cómo utilizar WebSockets en Node.js para crear aplicaciones en tiempo real",
+        "navigation": {
+            "title": "WebSockets en Node.js",
+            "cta": "Node.js"
+        },
+        "metadata": {
+            "title": "Tutorial de WebSockets en Node.js",
+            "description": "Aprende a utilizar WebSockets en Node.js para crear aplicaciones en tiempo real",
+            "slug": "websockets"
+        },
+        "category": "Node.js",
+        "tags": [
+            "Node.js",
+            "WebSockets",
+            "Aplicaciones en tiempo real",
+            "Desarrollo web"
+        ],
+        "content": "Los WebSockets son una tecnología que permite establecer una conexión bidireccional persistente entre un servidor y un cliente, lo que los convierte en una herramienta ideal para crear aplicaciones en tiempo real. En este tutorial, aprenderás a utilizar WebSockets en Node.js para crear una aplicación de chat en tiempo real. Verás cómo manejar las conexiones, enviar y recibir mensajes, y cómo integrar WebSockets con Express."
+    },
+    {
+        "name": "express",
+        "title": "Cómo crear una API RESTful con Express en Node.js",
+        "navigation": {
+            "title": "API RESTful con Express en Node.js",
+            "cta": "Node.js"
+        },
+        "metadata": {
+            "title": "Tutorial de API RESTful con Express en Node.js",
+            "description": "Aprende a crear una API RESTful con Express en Node.js",
+            "slug": "express"
+        },
+        "category": "Node.js",
+        "tags": [
+            "Node.js",
+            "Express",
+            "API RESTful",
+            "Desarrollo web"
+        ],
+        "content": "Express es un framework web para Node.js que permite crear aplicaciones web y APIs RESTful de manera sencilla y eficiente. En este tutorial, aprenderás a utilizar Express para crear una API RESTful completa. Verás cómo manejar las rutas, los controladores y las peticiones HTTP, y cómo conectarte a una base de datos MongoDB para almacenar y recuperar datos."
+    },
+    {
+        "name": "http",
+        "title": "Cómo crear un servidor HTTP básico en Node.js",
+        "navigation": {
+            "title": "Servidor HTTP básico en Node.js",
+            "cta": "Node.js"
+        },
+        "metadata": {
+            "title": "Tutorial de servidor HTTP en Node.js",
+            "description": "Aprende a crear un servidor HTTP básico en Node.js",
+            "slug": "http"
+        },
+        "category": "Node.js",
+        "tags": [
+            "Node.js",
+            "Servidor HTTP",
+            "Desarrollo web"
+        ],
+        "content": "Node.js es una plataforma que permite ejecutar JavaScript en el lado del servidor. En este tutorial, aprenderás a utilizar Node.js para crear un servidor HTTP básico. Verás cómo manejar las peticiones HTTP entrantes y cómo enviar las respuestas adecuadas. También cubriremos algunos conceptos clave como enrutamiento, middleware y gestión de errores."
+    },
+    {
+        "name": "ci-cd",
+        "title": "Cómo utilizar Docker en tu pipeline de CI/CD",
+        "navigation": {
+            "title": "CI/CD con Docker",
+            "cta": "Docker + CI/CD"
+        },
+        "metadata": {
+            "title": "Tutorial de CI/CD con Docker",
+            "description": "Aprende a utilizar Docker en tu pipeline de CI/CD",
+            "slug": "ci-cd"
+        },
+        "category": "Docker",
+        "tags": [
+            "Docker",
+            "CI/CD",
+            "Pipeline",
+            "DevOps"
+        ],
+        "content": "En este tutorial, te enseñaremos cómo utilizar Docker en tu pipeline de CI/CD. Verás cómo utilizar Docker para construir imágenes de contenedor y cómo utilizar Docker Compose para definir tus servicios de aplicaciones. También verás cómo integrar Docker en tu pipeline de CI/CD utilizando herramientas como Jenkins o GitLab CI/CD. Al final, tendrás una comprensión sólida de cómo Docker puede mejorar la eficiencia y la calidad de tu pipeline de CI/CD."
+    },
+    {
+        "name": "security",
+        "title": "Cómo mejorar la seguridad de tus aplicaciones con Docker",
+        "navigation": {
+            "title": "Seguridad en Docker",
+            "cta": "Docker + Seguridad"
+        },
+        "metadata": {
+            "title": "Tutorial de seguridad en Docker",
+            "description": "Aprende a mejorar la seguridad de tus aplicaciones con Docker",
+            "slug": "security"
+        },
+        "category": "Docker",
+        "tags": [
+            "Docker",
+            "Seguridad informática",
+            "Contenedores"
+        ],
+        "content": "En este tutorial, te enseñaremos cómo mejorar la seguridad de tus aplicaciones con Docker. Verás cómo configurar tu red y tus contenedores para limitar el acceso no autorizado, cómo utilizar volúmenes de datos cifrados y cómo configurar Docker para que funcione con TLS. También verás algunas mejores prácticas para la seguridad de contenedores y cómo utilizar herramientas de análisis de vulnerabilidades."
+    },
+    {
+        "name": "nginx",
+        "title": "Cómo utilizar Docker para configurar un servidor web con Nginx",
+        "navigation": {
+            "title": "Servidor web con Nginx en Docker",
+            "cta": "Docker + Nginx"
+        },
+        "metadata": {
+            "title": "Tutorial de Docker y Nginx",
+            "description": "Aprende a utilizar Docker para configurar un servidor web con Nginx",
+            "slug": "nginx"
+        },
+        "category": "Docker",
+        "tags": [
+            "Docker",
+            "Nginx",
+            "Servidor web",
+            "Desarrollo web"
+        ],
+        "content": "En este tutorial, te enseñaremos cómo utilizar Docker para configurar un servidor web con Nginx. Verás cómo crear y configurar un contenedor de Nginx, cómo exponer los puertos necesarios y cómo montar los archivos de configuración del servidor. También verás cómo utilizar Docker Compose para definir y gestionar tu aplicación multi-contenedor."
+    }
+]
