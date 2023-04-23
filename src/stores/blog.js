@@ -75,26 +75,43 @@ export const useBlogStore = defineStore({
         },
         getPostByPath: (state) => {
             return (_path) => {
-                return state.posts.find(post => post.path === _path);
+                let _post;
+
+                state.posts.forEach(post => {
+                    if (post.path === _path) _post = post;
+                });
+
+                return _post;
             };
         },
         getRelatedPosts: (state) => {
-            return (_post) => {
-                return new Set([...state.posts.filter(post => {
-                    return post.category === _post.category && post.name != _post.name;
-                })]);
-            };
-        },
-        getPostsByProp: (state) => {
-            return (prop, value, related = true) => {
-                const filteredPosts = new Set([...state.posts.filter(post => {
-                    return related ?
-                        post[prop] === value :
-                        post[prop] != value
-                })]);
+            return (category, name) => {
+                const filteredPosts = new Set();
+
+                state.posts.forEach(post => {
+                    if (post.category === category && post.name !== name) filteredPosts.add(post);
+                });
 
                 return filteredPosts;
             };
         },
+        getPostsByProp: (state) => {
+            return (prop, value, related = true) => {
+                const filteredPosts = new Set();
+
+                const shouldAdd = related ? 
+                post => post[prop] === value : 
+                post => post[prop] !== value;
+
+                state.posts.forEach(post => {
+                    if (shouldAdd(post)) {
+                        filteredPosts.add(post);
+                    }
+                });
+
+                return filteredPosts;
+            };
+        },
+
     },
 });

@@ -21,6 +21,6 @@ const route = useRoute();
 
 const blogStore = useBlogStore();
 const post = blogStore.getPostByPath(route.fullPath);
-const relatedPosts = blogStore.getRelatedPosts(post);
+const relatedPosts = blogStore.getRelatedPosts(post.category, post.name);
 const unrelatedPosts = blogStore.getPostsByProp("category", post.category, false);
 </script>
