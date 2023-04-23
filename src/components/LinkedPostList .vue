@@ -1,7 +1,7 @@
 <template>
     <section class="linkedPostList">
         <h3 v-if="title" v-html="title" />
-        <RouterLink v-for="post in posts" :key="post.name" v-html="post.navigation.title" :to="post.path" />
+        <RouterLink v-for="post in posts" :key="post.name" v-html="post.title" :to="post.path" :title="post.navigation.title" />
     </section>
 </template>
 
