@@ -1,13 +1,20 @@
 <template>
-    <h1>Explora el mundo de la programación</h1>
+  <h1>Explora el mundo de la programación</h1>
 
-    <hr>
-    <h2>¿Que estas buscando?</h2>
-    <input type="search" name="search" id="search" v-model="searchTerm" style="width: 320px;">
+  <hr>
+  <section class="searchSection">
+    <header class="searchHeader">
+      <h2>¿Que estas buscando?</h2>
+      <input type="search" name="search" v-model="searchTerm">
+    </header>
     <LinkedPostList v-if="result.size > 0" :posts="result" />
-    <p v-else>No hay nada...</p>
+    <template v-else>
+      <p>No hay nada...</p>
+      <hr>
+      <LinkedPostList :title="'Otros articulos que podrian interesarte'" :posts="blogStore.posts" />
+    </template>
     <hr>
-    <LinkedPostList v-if="result.size === 0" :title="'Otros articulos que podrian interesarte'" :posts="blogStore.posts" />
+  </section>
 </template>
 
 <script setup>
@@ -30,3 +37,13 @@ const result = computed(() => {
   return blogStore.searchPosts(searchTerm.value);
 });
 </script>
+
+<style scoped>
+.searchSection header.searchHeader {
+  margin-bottom: 1rem;
+}
+
+.searchSection header.searchHeader input {
+  width: 320px;
+}
+</style>
