@@ -18,6 +18,9 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Generate 404.html
+        run: echo "<html><head><meta http-equiv='refresh' content='0; url=index.html'></head></html>" > dist/404.html
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
