@@ -16,7 +16,7 @@ export const useBlogStore = defineStore({
     actions: {
         async fetchPosts() {
             try {
-                const response = await axios.get('/posts.json');
+                const response = await axios.get(process.env.NODE_ENV === "production" ? "/pinia-json-dynamic-blog/" : "/" + "posts.json");
                 response.data.forEach(post => this.posts.add(post));
 
                 this.storeCategoriesAndPaths();
