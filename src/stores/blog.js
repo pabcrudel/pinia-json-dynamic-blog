@@ -15,12 +15,10 @@ export const useBlogStore = defineStore({
     }),
     actions: {
         async fetchPosts() {
-            const dbPath = process.env.NODE_ENV === "production" ? "https://pabcrudel.github.io/pinia-json-dynamic-blog/" : "/";
-            dbPath += "posts.json";
+            const dbPath = `${process.env.NODE_ENV === "production" ? "/pinia-json-dynamic-blog/" : "/"}posts.json`;
             
-            console.log(dbPath)
             try {
-                const response = await axios.get(process.env.NODE_ENV === "production" ? "https://pabcrudel.github.io/pinia-json-dynamic-blog/posts.json" : "/posts.json");
+                const response = await axios.get(dbPath);
 
                 response.data.forEach(post => this.posts.add(post));
 
