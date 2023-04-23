@@ -14,10 +14,10 @@
         "category": "Vue.js",
         "tags": [
             "Frontend",
-            "JavasCript",
+            "JavaSript",
             "Web development"
         ],
-        "content": "Vue.js es un framework de JavaScript para construir interfaces de usuario interactivas y complejas. En este tutorial, aprenderás los conceptos básicos de Vue.js, incluyendo cómo definir componentes, enlazar datos y eventos, y usar directivas para actualizar la interfaz de usuario en tiempo real. También verás cómo utilizar Vue.js junto con otras herramientas de desarrollo web para crear aplicaciones completas y escalables."
+        "content": "Vue.js es un framework de JavaSript para construir interfaces de usuario interactivas y complejas. En este tutorial, aprenderás los conceptos básicos de Vue.js, incluyendo cómo definir componentes, enlazar datos y eventos, y usar directivas para actualizar la interfaz de usuario en tiempo real. También verás cómo utilizar Vue.js junto con otras herramientas de desarrollo web para crear aplicaciones completas y escalables."
     },
     {
         "name": "components",
@@ -34,7 +34,7 @@
         "category": "Vue.js",
         "tags": [
             "Frontend",
-            "JavasCript",
+            "JavaSript",
             "Web development"
         ],
         "content": "Los componentes son la base de la arquitectura de Vue.js. En este tutorial, aprenderás cómo crear componentes reutilizables en Vue.js, incluyendo cómo definir las propiedades, manejar eventos y utilizar slots para crear componentes más flexibles. También verás cómo utilizar los componentes en una aplicación de Vue.js y cómo estructurar la aplicación en un conjunto de componentes interconectados."
@@ -54,7 +54,7 @@
         "category": "Vue.js",
         "tags": [
             "Frontend",
-            "JavasCript",
+            "JavaSript",
             "Web development"
         ],
         "content": "El enrutamiento es una parte fundamental de las aplicaciones web de página única (SPA). En este tutorial, aprenderás cómo utilizar el enrutamiento en Vue.js para crear aplicaciones de SPA y mejorar la experiencia del usuario. Verás cómo definir rutas, pasar parámetros y navegar entre páginas en una aplicación de Vue.js. También verás cómo utilizar el enrutamiento junto con otros conceptos de Vue.js, como la gestión de estados y los componentes, para crear aplicaciones más complejas y escalables."
@@ -119,7 +119,7 @@
             "Servidor HTTP",
             "Desarrollo web"
         ],
-        "content": "Node.js es una plataforma que permite ejecutar JavaScript en el lado del servidor. En este tutorial, aprenderás a utilizar Node.js para crear un servidor HTTP básico. Verás cómo manejar las peticiones HTTP entrantes y cómo enviar las respuestas adecuadas. También cubriremos algunos conceptos clave como enrutamiento, middleware y gestión de errores."
+        "content": "Node.js es una plataforma que permite ejecutar JavaSript en el lado del servidor. En este tutorial, aprenderás a utilizar Node.js para crear un servidor HTTP básico. Verás cómo manejar las peticiones HTTP entrantes y cómo enviar las respuestas adecuadas. También cubriremos algunos conceptos clave como enrutamiento, middleware y gestión de errores."
     },
     {
         "name": "ci-cd",
