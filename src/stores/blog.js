@@ -16,6 +16,8 @@ export const useBlogStore = defineStore({
     actions: {
         async fetchPosts() {
             const dbPath = `${process.env.NODE_ENV === "production" ? "/pinia-json-dynamic-blog/" : "/"}posts.json`;
+
+            console.log(import.meta.env.BASE_URL)
             
             try {
                 const response = await axios.get(dbPath);
