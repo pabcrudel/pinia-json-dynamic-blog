@@ -1,5 +1,6 @@
 <template>
-    <h1 v-html="post.navigation.title" />
+    <h1 v-html="post.title" />
+    <LinkedSearchTermList :terms="post.tags"/>
     <hr>
     <p v-html="post.content" />
     <template v-if="relatedPosts.size > 0">
@@ -16,6 +17,7 @@ import { useRoute } from 'vue-router';
 import { useBlogStore } from '../stores/blog';
 
 import LinkedPostList from '../components/LinkedPostList .vue';
+import LinkedSearchTermList from '../components/LinkedSearchTermList.vue';
 
 const route = useRoute();
 
