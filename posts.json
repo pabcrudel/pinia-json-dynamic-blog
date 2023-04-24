@@ -3,12 +3,12 @@
         "name": "basics",
         "navigation": {
             "title": "Tutorial de Vue.js",
-            "cta": "Vue.js"
+            "cta": "Vue.js desde cero: Guia para principiantes"
         },
         "metadata": {
             "title": "Introducción a Vue.js",
             "description": "Aprende los conceptos básicos de Vue.js para construir aplicaciones web interactivas",
-            "slug": "basics"
+            "slug": "introduccion"
         },
         "category": "Vue.js",
         "tags": [
@@ -22,8 +22,8 @@
     {
         "name": "components",
         "navigation": {
-            "title": "Tutorial de Vue.js",
-            "cta": "Vue.js"
+            "title": "Crea componentes reutilizables en Vue.js",
+            "cta": "Desarrolla componentes flexibles en Vue.js"
         },
         "metadata": {
             "title": "Creando componentes en Vue.js",
@@ -42,11 +42,11 @@
     {
         "name": "routing",
         "navigation": {
-            "title": "Tutorial de Vue.js",
-            "cta": "Vue.js"
+            "title": "Aprende a crear rutas en aplicaciones Vue.js",
+            "cta": "Navegación en Vue.js: Enrutamiento paso a paso"
         },
         "metadata": {
-            "title": "Enrutamiento en Vue.js",
+            "title": "Gestión de rutas en Vue.js para un desarrollo más eficiente",
             "description": "Aprende a utilizar el enrutamiento en Vue.js para crear aplicaciones de página única (SPA) y mejorar la experiencia del usuario",
             "slug": "routing"
         },
@@ -63,7 +63,7 @@
         "name": "sockets",
         "navigation": {
             "title": "Tutorial de WebSockets en Node.js",
-            "cta": "Node.js"
+            "cta": "Crea aplicaciones en tiempo real con WebSockets en Node.js"
         },
         "metadata": {
             "title": "WebSockets en Node.js",
@@ -84,7 +84,7 @@
         "name": "express",
         "navigation": {
             "title": "Tutorial de API RESTful con Express en Node.js",
-            "cta": "Node.js"
+            "cta": "Aprende a construir una API RESTful en Node.js usando Express"
         },
         "metadata": {
             "title": "API RESTful con Express en Node.js",
@@ -105,7 +105,7 @@
         "name": "http",
         "navigation": {
             "title": "Tutorial de servidor HTTP en Node.js",
-            "cta": "Node.js"
+            "cta": "Implementa un servidor HTTP de forma facil con Node.js"
         },
         "metadata": {
             "title": "Servidor HTTP básico en Node.js",
@@ -125,7 +125,7 @@
         "name": "ci-cd",
         "navigation": {
             "title": "Tutorial de CI/CD con Docker",
-            "cta": "Docker + CI/CD"
+            "cta": "Integra Docker en tu pipeline de CI/CD"
         },
         "metadata": {
             "title": "CI/CD con Docker",
@@ -146,7 +146,7 @@
         "name": "security",
         "navigation": {
             "title": "Tutorial de seguridad en Docker",
-            "cta": "Docker + Seguridad"
+            "cta": "Fortalece la seguridad de tus aplicaciones utilizando Docker"
         },
         "metadata": {
             "title": "Seguridad en Docker",
@@ -166,7 +166,7 @@
         "name": "nginx",
         "navigation": {
             "title": "Tutorial de Docker y Nginx",
-            "cta": "Docker + Nginx"
+            "cta": "Crea un servidor web con Nginx y Docker"
         },
         "metadata": {
             "title": "Servidor web con Nginx en Docker",
@@ -187,12 +187,12 @@
         "name": "aws-s3",
         "navigation": {
             "title": "Tutorial de AWS S3",
-            "cta": "AWS"
+            "cta": "AWS S3: Almacena en la nube de forma segura  tus archivos"
         },
         "metadata": {
             "title": "Almacenamiento en la nube con AWS S3",
             "description": "Aprende a utilizar AWS S3 para almacenar archivos en la nube y acceder a ellos desde cualquier lugar",
-            "slug": "tutorial-aws-s3"
+            "slug": "s3"
         },
         "category": "AWS",
         "tags": [
@@ -200,19 +200,19 @@
             "Storage",
             "Web development"
         ],
-        "title": "Cómo utilizar AWS S3 para almacenamiento en la nube",
+        "title": "Utiliza AWS S3 como almacenamiento seguro en la nube",
         "content": "AWS S3 es un servicio de almacenamiento en la nube altamente escalable y seguro que te permite almacenar y recuperar archivos desde cualquier lugar y en cualquier momento. En este tutorial, aprenderás cómo utilizar AWS S3 para almacenar y recuperar archivos, y cómo configurar la seguridad y el control de acceso. Verás cómo utilizar las herramientas de AWS para gestionar tus objetos de almacenamiento y cómo integrar AWS S3 en tus aplicaciones web."
     },
     {
         "name": "aws-ec2",
         "navigation": {
             "title": "Tutorial de AWS EC2",
-            "cta": "AWS"
+            "cta": "Implementa servidores con AWS EC2: Guía paso a paso"
         },
         "metadata": {
             "title": "Implementando servidores con AWS EC2",
             "description": "Aprende a utilizar AWS EC2 para implementar servidores y aplicaciones web escalables",
-            "slug": "tutorial-aws-ec2"
+            "slug": "ec2"
         },
         "category": "AWS",
         "tags": [
@@ -227,12 +227,12 @@
         "name": "aws-lambda",
         "navigation": {
             "title": "Tutorial de AWS Lambda",
-            "cta": "AWS"
+            "cta": "Crea aplicaciones serverless con AWS Lambda"
         },
         "metadata": {
             "title": "Desarrollo de aplicaciones serverless con AWS Lambda",
             "description": "Aprende a utilizar AWS Lambda para crear aplicaciones sin servidor y escalarlas automáticamente",
-            "slug": "tutorial-aws-lambda"
+            "slug": "lambda"
         },
         "category": "AWS",
         "tags": [
