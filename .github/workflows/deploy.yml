@@ -19,7 +19,9 @@ jobs:
         run: npm run build
 
       - name: Generate 404.html
-        run: echo "<!DOCTYPE html><html lang="es"><head><meta http-equiv='refresh' content='0; url=https://pabcrudel.github.io/pinia-json-dynamic-blog/'></head></html>" > dist/404.html
+        run: |
+          repo_name=$(git rev-parse --show-toplevel | xargs basename)
+          echo "<!DOCTYPE html><html lang="es"><head><meta http-equiv='refresh' content='0; url=https://pabcrudel.github.io/$repo_name/'></head></html>" > dist/404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
