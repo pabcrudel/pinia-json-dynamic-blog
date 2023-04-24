@@ -14,8 +14,13 @@
 </template>
 
 <script setup>
-import { useBlogStore } from './stores/blog'
+import { useBlogStore } from './stores/blog';
+import { useHead } from '@unhead/vue';
 
 const blogStore = useBlogStore();
-blogStore.fetchPosts()
+blogStore.fetchPosts();
+
+useHead({
+  titleTemplate: (title) => title ? title : "Mi Blog",
+});
 </script>
