@@ -2,7 +2,7 @@
     <section class="linkedPostList">
         <h3 v-if="title" v-html="title" />
         <div class="list">
-            <RouterLink v-for="post in posts" :key="post.name" v-html="post.metadata.title" :to="post.path" :title="post.navigation.title" />
+            <RouterLink v-for="post in posts" :key="post.name" v-html="post.navigation.cta" :to="post.path" :title="post.navigation.title" />
         </div>
     </section>
 </template>
