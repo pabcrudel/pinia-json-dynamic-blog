@@ -44,6 +44,7 @@
 #app .linkedSearchTermList.post .list {
   flex-direction: row;
   font-size: small;
+  flex-wrap: wrap;
 }
 #app .linkedSearchTermList.post .list a {
   border: 1px solid grey;

@@ -57,6 +57,7 @@
         &.post .list {
             flex-direction: row;
             font-size: small;
+            flex-wrap: wrap;
 
             a {
                 border: 1px solid grey;
