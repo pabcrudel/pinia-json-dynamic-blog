@@ -12,7 +12,7 @@ import useStringEditor from '../composables/useStringEditor';
 defineProps({
     title: String,
     terms: {
-        type: Set,
+        type: [Set, Array],
         required: true
     }
 });
