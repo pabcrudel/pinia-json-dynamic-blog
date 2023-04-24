@@ -1,16 +1,55 @@
 @import './base.css';
-
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
-
-a,
-.green {
+#app a, #app .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: hsl(160, 100%, 37%);
   transition: 0.4s;
+}
+#app nav {
+  display: flex;
+  gap: 1rem;
+}
+#app hr {
+  margin: 1rem 0;
+}
+#app .home a {
+  display: block;
+}
+#app .home h2 {
+  -webkit-text-decoration: underline lightblue;
+          text-decoration: underline lightblue;
+}
+#app .searchSection header.searchHeader {
+  margin-bottom: 1rem;
+}
+#app .searchSection header.searchHeader input {
+  width: 320px;
+}
+#app .linkedPostList, #app .linkedSearchTermList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#app .linkedPostList .list, #app .linkedSearchTermList .list {
+  display: flex;
+  flex-direction: column;
+}
+#app .linkedPostList .list {
+  gap: 0.5rem;
+}
+#app .linkedSearchTermList .list {
+  gap: 0.25rem;
+}
+#app .linkedSearchTermList.post .list {
+  flex-direction: row;
+  font-size: small;
+}
+#app .linkedSearchTermList.post .list a {
+  border: 1px solid grey;
+  padding: 0 0.3rem;
 }

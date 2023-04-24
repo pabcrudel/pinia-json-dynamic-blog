@@ -1,7 +1,9 @@
 <template>
     <section class="linkedPostList">
         <h3 v-if="title" v-html="title" />
-        <RouterLink v-for="post in posts" :key="post.name" v-html="post.metadata.title" :to="post.path" :title="post.navigation.title" />
+        <div class="list">
+            <RouterLink v-for="post in posts" :key="post.name" v-html="post.metadata.title" :to="post.path" :title="post.navigation.title" />
+        </div>
     </section>
 </template>
 
@@ -14,11 +16,3 @@ defineProps({
     }
 });
 </script>
-
-<style scoped>
-.linkedPostList {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-</style>

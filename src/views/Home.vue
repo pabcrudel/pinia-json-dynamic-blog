@@ -17,13 +17,3 @@ import LinkedSearchTermList from '../components/LinkedSearchTermList.vue';
 
 const blogStore = useBlogStore();
 </script>
-
-<style scoped>
-h2 {
-  text-decoration: underline lightblue;
-}
-
-a {
-  display: block;
-}
-</style>

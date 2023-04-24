@@ -1,8 +1,10 @@
 <template>
     <h1 v-html="post.title" />
-    <LinkedSearchTermList :terms="post.tags"/>
     <hr>
     <p v-html="post.content" />
+    <hr>
+    <LinkedSearchTermList class="post" :title="'Etiquetas'" :terms="post.tags"/>
+    
     <template v-if="relatedPosts.size > 0">
         <hr>
         <LinkedPostList :title="'Articulos Relacionados'" :posts="relatedPosts" />

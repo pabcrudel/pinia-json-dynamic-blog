@@ -37,13 +37,3 @@ const result = computed(() => {
   return blogStore.searchPosts(searchTerm.value);
 });
 </script>
-
-<style scoped>
-.searchSection header.searchHeader {
-  margin-bottom: 1rem;
-}
-
-.searchSection header.searchHeader input {
-  width: 320px;
-}
-</style>
