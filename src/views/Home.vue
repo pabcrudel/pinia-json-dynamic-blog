@@ -5,7 +5,7 @@
     <hr>
     <LinkedSearchTermList :title="'Categorias'" :terms="blogStore.categories"/>
     <hr>
-    <LinkedSearchTermList :title="'Etiquetas'" :terms="blogStore.tags"/>
+    <LinkedSearchTermList class="columns" :title="'Etiquetas'" :terms="blogStore.tags"/>
     <hr>
   </div>
 </template>

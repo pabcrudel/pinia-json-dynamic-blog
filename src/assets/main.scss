@@ -7,7 +7,8 @@
 
     font-weight: normal;
 
-    a, .green {
+    a,
+    .green {
         text-decoration: none;
         color: hsla(160, 100%, 37%, 1);
         transition: 0.4s;
@@ -22,25 +23,16 @@
         margin: 1rem 0;
     }
 
-    .home {
-        a {
-            display: block;
-        }
-
-        h2 {
-            text-decoration: underline lightblue;
-        }
-    }
-
     .searchSection header.searchHeader {
         margin-bottom: 1rem;
-        
+
         input {
             width: 320px;
         }
     }
 
-    .linkedPostList, .linkedSearchTermList {
+    .linkedPostList,
+    .linkedSearchTermList {
         display: flex;
         flex-direction: column;
         gap: .5rem;
@@ -50,24 +42,42 @@
             flex-direction: column;
         }
     }
-    
+
     .linkedPostList {
         .list {
             gap: .5rem;
         }
     }
-    
+
     .linkedSearchTermList {
         .list {
             gap: .25rem;
         }
+
         &.post .list {
             flex-direction: row;
             font-size: small;
-    
+
             a {
                 border: 1px solid grey;
                 padding: 0 .3rem;
+            }
+        }
+    }
+
+    .home {
+        a {
+            display: block;
+        }
+
+        h2 {
+            text-decoration: underline lightblue;
+        }
+
+        .linkedSearchTermList.columns {
+            .list {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
         }
     }
