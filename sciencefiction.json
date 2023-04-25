@@ -3,38 +3,37 @@
         "name": "isaac-asimov-leyes-robotica",
         "navigation": {
             "title": "Las leyes de la robótica según Isaac Asimov",
-            "cta": "Asimov"
+            "cta": "Explora la ética y tecnología futurista con Las Leyes de la Robótica de Asimov"
         },
         "metadata": {
             "title": "El legado de Isaac Asimov en la ciencia ficción",
             "description": "Conoce las leyes de la robótica de Isaac Asimov y su importancia en la ciencia ficción",
             "slug": "isaac-asimov-leyes-robotica"
         },
-        "category": "Escritores de ciencia ficción",
+        "category": "Escritores de Ciencia Ficción",
         "tags": [
-            "Isaac Asimov",
             "Leyes de la robótica",
-            "Ciencia ficción"
+            "Inteligencia artificial",
+            "Androides"
         ],
-        "title": "Las leyes de la robótica según Isaac Asimov",
+        "title": "Las Leyes de la Robótica: Ética en la Inteligencia Artificial",
         "content": "Isaac Asimov es uno de los escritores de ciencia ficción más reconocidos y sus leyes de la robótica son una de sus mayores contribuciones a la cultura popular. En este artículo, conocerás las tres leyes de la robótica y su importancia en la ciencia ficción. También hablaremos sobre cómo estas leyes han sido adaptadas en diferentes obras y su influencia en el desarrollo de la inteligencia artificial."
     },
     {
         "name": "ray-bradbury-fahrenheit-451",
         "navigation": {
-            "title": "La visión del futuro según Ray Bradbury en Fahrenheit 451",
-            "cta": "Bradbury"
+            "title": "Fahrenheit 451: La Visión de Bradbury del Futuro sin Libros",
+            "cta": "Tecnología, control y libros quemados: la distopía de Bradbury. Fahrenheit 451"
         },
         "metadata": {
             "title": "La obra maestra de Ray Bradbury en la ciencia ficción",
             "description": "Descubre la visión del futuro de Ray Bradbury en su obra maestra Fahrenheit 451",
             "slug": "ray-bradbury-fahrenheit-451"
         },
-        "category": "Escritores de ciencia ficción",
+        "category": "Escritores de Ciencia Ficción",
         "tags": [
-            "Ray Bradbury",
-            "Fahrenheit 451",
-            "Ciencia ficción"
+            "Crítica social",
+            "Resistencia"
         ],
         "title": "La visión del futuro según Ray Bradbury en Fahrenheit 451",
         "content": "Fahrenheit 451 es una de las obras más emblemáticas de Ray Bradbury y una de las más influyentes en la ciencia ficción. En este artículo, exploraremos la visión del futuro de Bradbury en esta obra, centrada en una sociedad en la que los libros son prohibidos y quemados. Hablaremos sobre los temas principales de la novela, como la libertad de expresión, el papel de la tecnología en la sociedad y la lucha contra la opresión."
@@ -42,83 +41,200 @@
     {
         "name": "hg-wells-maquina-tiempo",
         "navigation": {
-            "title": "H.G. Wells y La Máquina del Tiempo",
-            "cta": "Ciencia Ficción"
+            "title": "La Máquina del Tiempo de H.G. Wells: Un Clásico de la Ciencia Ficción",
+            "cta": "H.G. Wells y la Revolución de la Ciencia Ficción con La Máquina del Tiempo"
         },
         "metadata": {
-            "title": "H.G. Wells y su contribución a la ciencia ficción con La Máquina del Tiempo",
+            "title": "La Máquina del Tiempo: H.G. Wells y su Legado en la Ciencia Ficción",
             "description": "Descubre cómo H.G. Wells revolucionó la ciencia ficción con su novela La Máquina del Tiempo y cómo ha influido en la cultura popular",
             "slug": "hg-wells-la-maquina-del-tiempo"
         },
-        "category": "Escritores de Ciencia ficción",
+        "category": "Escritores de Ciencia Ficción",
         "tags": [
-            "H.G. Wells",
-            "La Máquina del Tiempo",
-            "Ciencia Ficción"
+            "Viajes en el Tiempo",
+            "Crítica social",
+            "Futuro imaginado"
         ],
-        "title": "H.G. Wells y La Máquina del Tiempo",
+        "title": "Viaja en el tiempo con H.G. Wells y su Máquina del Tiempo.",
         "content": "H.G. Wells fue uno de los escritores más influyentes en el género de la ciencia ficción, y su obra más conocida, La Máquina del Tiempo, es un clásico del género. En este artículo, exploraremos cómo Wells revolucionó la ciencia ficción con esta novela, y cómo ha influido en la cultura popular desde su publicación en 1895. Hablaremos de los temas y conceptos que Wells introduce en la novela, como el viaje en el tiempo y la evolución de la humanidad, y cómo estos han sido retomados por otros autores y en otras obras de ciencia ficción. También hablaremos de la adaptación de la novela a otros medios, como el cine y la televisión."
     },
     {
         "name": "1984",
         "navigation": {
-            "title": "1984 de George Orwell",
-            "cta": "Más información"
+            "title": "Desafía al Gran Hermano en 1984: ¡Descubre la Distopía que Predijo el Futuro!",
+            "cta": "1984 de George Orwell: Un Futuro Distópico de Control Totalitario y Rebelión"
         },
         "metadata": {
-            "title": "1984 de George Orwell: Una visión del futuro distópico",
+            "title": "1984 de George Orwell: Una Distopía Aterradora sobre el Control Totalitario",
             "description": "Descubre cómo la obra maestra de George Orwell, 1984, nos presenta una visión aterradora de un futuro distópico donde el gobierno controla todo y la libertad individual es inexistente.",
-            "slug": "1984-george-orwell-futuro-distopico"
+            "slug": "1984-george-orwell"
         },
         "category": "Futuros distópicos",
         "tags": [
-            "literatura",
-            "política",
-            "control"
+            "Política",
+            "Control Totalitario",
+            "Futuro imaginado"
         ],
-        "title": "1984 de George Orwell",
+        "title": "1984 de George Orwell: Una Profecía Distópica de Control Totalitario y Rebelión",
         "content": "1984 es una novela escrita por George Orwell que nos presenta una visión aterradora de un futuro distópico. En este futuro, el gobierno controla todo y la libertad individual es inexistente. La novela sigue la historia de Winston Smith, un hombre que trabaja en el Ministerio de la Verdad y que comienza a cuestionar la verdad del gobierno. A medida que avanza la historia, se hace cada vez más evidente que la realidad es muy diferente a lo que el gobierno quiere que la gente crea."
     },
     {
         "name": "Blade Runner",
         "navigation": {
-            "title": "Blade Runner: Un futuro distópico",
-            "cta": "Más información"
+            "title": "Viaje al Futuro Oscuro con Dilemas Éticos y Replicantes en Blade Runner",
+            "cta": "Blade Runner: Sumérgete en el Misterios de los Replicantes"
         },
         "metadata": {
-            "title": "Blade Runner: Un futuro distópico",
+            "title": "Explora el Universo de Blade Runner: Replicantes, Futuro Oscuro y Reflexiones Éticas",
             "description": "Descubre cómo la película de ciencia ficción Blade Runner nos presenta un futuro distópico donde la tecnología y la inteligencia artificial han avanzado tanto que la humanidad ha perdido su lugar en el mundo.",
-            "slug": "blade-runner-futuro-distopico"
+            "slug": "blade-runner"
         },
         "category": "Futuros distópicos",
         "tags": [
-            "ciencia ficción",
-            "inteligencia artificial",
-            "futuro"
+            "Inteligencia artificial",
+            "Androides",
+            "Ambigüedad moral"
         ],
-        "title": "Blade Runner",
+        "title": "Blade Runner: Un Futuro Oscuro Habitado por Replicantes y Dilemas Éticos",
         "content": "Blade Runner es una película de ciencia ficción que nos presenta un futuro distópico donde la tecnología y la inteligencia artificial han avanzado tanto que la humanidad ha perdido su lugar en el mundo. La historia sigue a Rick Deckard, un Blade Runner, cuya misión es retirar a replicantes, androides creados por la compañía Tyrell Corporation. La película explora temas como la identidad, la humanidad y la moralidad en un mundo donde la tecnología ha avanzado más allá de lo que se puede imaginar."
     },
     {
         "name": "los-juegos-del-hambre",
         "navigation": {
-            "title": "Distopías: Los Juegos del Hambre",
-            "cta": "Distopías"
+            "title": "Los Juegos del Hambre: Una distopía sobre la opresión y la resistencia",
+            "cta": "Únete a la Lucha por la Supervivencia en Los Juegos del Hambre"
         },
         "metadata": {
-            "title": "Los Juegos del Hambre: Una distopía sobre la opresión y la resistencia",
+            "title": "Los Juegos del Hambre: Un Mundo Distópico de Supervivencia y Rebelión",
             "description": "Una reseña sobre la famosa saga de libros y películas que explora temas como la opresión política, la desigualdad social y la resistencia a través de una competencia brutal de supervivencia",
-            "slug": "los-juegos-del-hambre-distopia"
+            "slug": "los-juegos-del-hambre"
         },
         "category": "Futuros distópicos",
         "tags": [
-            "futuro",
-            "opresión",
-            "resistencia",
-            "competencia",
-            "supervivencia"
+            "Opresión",
+            "Resistencia",
+            "Supervivencia"
         ],
-        "title": "La resistencia en Los Juegos del Hambre",
+        "title": "Los Juegos del Hambre: Una Crítica Social Disfrazada de Distopía",
         "content": "En Los Juegos del Hambre, Suzanne Collins crea una distopía en la que el gobierno central oprime y explota a las personas en los distritos más pobres, mientras que las élites disfrutan de una vida lujosa en la capital. La competencia anual de los Juegos del Hambre es un símbolo de esta desigualdad, en la que los niños y niñas de los distritos son obligados a pelear a muerte en una arena para el entretenimiento de los ricos. Pero en medio de esta opresión, surge una resistencia liderada por Katniss Everdeen, quien se convierte en el símbolo de la lucha contra el gobierno y la búsqueda de la justicia. A través de los personajes y las situaciones que se presentan en la saga, Collins presenta una crítica social sobre temas como la desigualdad, la opresión, la manipulación mediática y la resistencia ante un sistema injusto. En resumen, Los Juegos del Hambre es una obra que invita a reflexionar sobre la realidad social y política de nuestro mundo a través de la lente de la ficción distópica."
+    },
+    {
+        "name": "viaje-a-la-luna-julio-verne",
+        "navigation": {
+            "title": "Descubre la Emocionante Novela de Julio Verne que Inició la Exploración Espacial",
+            "cta": "Verne y el Viaje Épico a la Luna que Cambió el Futuro"
+        },
+        "metadata": {
+            "title": "Viaje a la Luna de Julio Verne: Descubre la Novela que Inspiró la Exploración Espacial",
+            "description": "Descubre la fascinante historia de la novela de Julio Verne, El viaje a la Luna, que ha inspirado a generaciones de lectores",
+            "slug": "viaje-a-la-luna-julio-verne"
+        },
+        "category": "Novelas sobre Viajes al Espacio",
+        "tags": [
+            "Viajes al espacio",
+            "Aeronáutica",
+            "Futuro imaginado"
+        ],
+        "title": "Explorando el Viaje a la Luna de Julio Verne: Una Aventura Literaria en el Espacio",
+        "content": "El viaje a la Luna es una de las obras más emblemáticas de la ciencia ficción y una de las más conocidas del escritor francés Julio Verne. En este artículo, exploraremos la fascinante historia detrás de la novela y su impacto en la cultura popular. Desde su publicación en 1865, El viaje a la Luna ha inspirado a generaciones de lectores y ha sido adaptada en varias ocasiones al cine y la televisión."
+    },
+    {
+        "name": "dune",
+        "navigation": {
+            "title": "Descubre la Tecnología del Doblaje Espacial en Dune: Un Viaje al futuro",
+            "cta": "Desvela los Secretos de Dune: ¡Viaja a un Futuro Asombroso!"
+        },
+        "metadata": {
+            "title": "Dune: Una Experiencia Épica en el Cosmos",
+            "description": "Explora el universo de Frank Herbert en la serie Dune y descubre cómo se utilizan los viajes interestelares en esta saga de ciencia ficción épica",
+            "slug": "dune"
+        },
+        "category": "Novelas sobre Viajes al Espacio",
+        "tags": [
+            "Política",
+            "Ecología"
+        ],
+        "title": "Viajes al Espacio en Dune: La Tecnología del Doblaje Espacial",
+        "content": "En la serie Dune, los personajes viajan por el universo gracias al doblaje espacial, una tecnología que les permite desplazarse a través de la galaxia de manera casi instantánea. En este artículo exploraremos cómo funciona esta tecnología, cómo se desarrolló en el universo de Dune y cómo ha influido en otras obras de ciencia ficción."
+    },
+    {
+        "name": "el-juego-de-ender",
+        "navigation": {
+            "title": "Descubriendo la Brillantez Táctica: Explorando 'El Juego de Ender",
+            "cta": "El Juego de Ender': Una Inmersión en la Ciencia Ficción y Estrategia"
+        },
+        "metadata": {
+            "title": "El Juego de Ender: Una Novela Clásica de Ciencia Ficción",
+            "description": "Descubre la fascinante historia de Ender Wiggin y su lucha contra una raza alienígena en la novela de ciencia ficción 'El Juego de Ender'",
+            "slug": "el-juego-de-ender"
+        },
+        "category": "Novelas sobre Viajes al Espacio",
+        "tags": [
+            "Viajes al espacio",
+            "Alienígenas",
+            "Exploración psicológica"
+        ],
+        "title": "Una Odisea Espacial Llena de Suspense: Explorando 'El Juego de Ender'",
+        "content": "En 'El Juego de Ender', de Orson Scott Card, seguimos la vida de Andrew 'Ender' Wiggin, un niño prodigio en una sociedad futurista que se encuentra en guerra contra una raza alienígena conocida como los Insectores. Ender es seleccionado para asistir a una escuela militar especial donde se le entrena para convertirse en el mejor comandante posible, con la esperanza de que algún día pueda liderar a la humanidad a la victoria contra los Insectores. La historia de Ender es emocionante y conmovedora, explorando temas como la identidad, la moralidad y la comprensión de la naturaleza humana. 'El Juego de Ender' es un clásico de la ciencia ficción y una de las novelas más influyentes del género de los últimos tiempos."
+    },
+    {
+        "name": "blade-runner-2049",
+        "navigation": {
+            "title": "Blade Runner 2049: El futuro distópico vuelve en esta secuela",
+            "cta": "Explora el futuro oscuro de Blade Runner 2049"
+        },
+        "metadata": {
+            "title": "Blade Runner 2049: Redescubre un mundo de replicantes y misterio en esta épica secuela",
+            "description": "Descubre todo lo que necesitas saber sobre Blade Runner 2049, la secuela de la película de ciencia ficción de culto de Ridley Scott.",
+            "slug": "blade-runner-2049"
+        },
+        "category": "Películas destacadas",
+        "tags": [
+            "Androides",
+            "Filosofía post-humana",
+            "Transhumanismo"
+        ],
+        "title": "Blade Runner 2049: La secuela de la película de culto de ciencia ficción",
+        "content": "Blade Runner 2049 es la secuela de la icónica película de ciencia ficción de 1982 dirigida por Ridley Scott. La película se desarrolla 30 años después de los eventos de la primera entrega y sigue a un nuevo Blade Runner llamado K, interpretado por Ryan Gosling, en su búsqueda de Rick Deckard, el personaje principal de la película original interpretado por Harrison Ford. Descubre en este artículo todo lo que necesitas saber sobre Blade Runner 2049, incluyendo su trama, el elenco, la banda sonora y más."
+    },
+    {
+        "name": "el-quinto-elemento",
+        "navigation": {
+            "title": "El Quinto Elemento: Descubre la mezcla perfecta de acción, ciencia ficción y comedia",
+            "cta": "Explora el universo único de El Quinto Elemento"
+        },
+        "metadata": {
+            "title": "El Quinto Elemento: acción, ciencia ficción y comedia en una sola película",
+            "description": "Conoce todo sobre El Quinto Elemento, la película de ciencia ficción dirigida por Luc Besson y protagonizada por Bruce Willis y Milla Jovovich.",
+            "slug": "el-quinto-elemento"
+        },
+        "category": "Películas destacadas",
+        "tags": [
+            "Extraterrestres",
+            "Viaje espacial",
+            "Cine de los 90s"
+        ],
+        "title": "El Quinto Elemento: La película que mezcla acción, ciencia ficción y comedia",
+        "content": "El Quinto Elemento es una película de ciencia ficción de 1997 dirigida por Luc Besson y protagonizada por Bruce Willis y Milla Jovovich. La película sigue a Korben Dallas, un exfuerzas especiales que es reclutado por Leeloo, una extraterrestre que es el quinto elemento necesario para salvar al mundo de la destrucción. Descubre en este artículo todo sobre El Quinto Elemento, incluyendo su trama, el elenco, la música y más."
+    },
+    {
+        "name": "interstellar",
+        "navigation": {
+            "title": "Descubre los misterios del espacio con Interstellar",
+            "cta": "Interstellar: Explorando los límites del espacio"
+        },
+        "metadata": {
+            "title": "Interstellar: Una odisea en el espacio profundo",
+            "description": "Descubre el mundo de Interstellar, una película que explora los límites del espacio y el tiempo en un futuro cercano.",
+            "slug": "interstellar-pelicula-ciencia-ficcion"
+        },
+        "category": "Películas destacadas",
+        "tags": [
+            "Exploración espacial",
+            "Agujeros negros",
+            "Viajes en el tiempo"
+        ],
+        "title": "Interstellar: Explora su legado científico y emocional",
+        "content": "Interstellar es una película de ciencia ficción que se desarrolla en un futuro cercano en el que la humanidad se enfrenta a la escasez de recursos y a la inminente extinción. La trama sigue a un grupo de astronautas que viajan a través de un agujero de gusano en busca de un nuevo hogar para la humanidad. La película destaca por su precisión científica y su enfoque en la física teórica, que la hace más realista que otras películas de ciencia ficción. Además, la interpretación de los actores, la música y la dirección hacen de Interstellar una experiencia emocionalmente poderosa y una obra maestra de la ciencia ficción."
     }
 ]
