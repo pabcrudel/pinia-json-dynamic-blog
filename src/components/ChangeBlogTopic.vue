@@ -1,7 +1,7 @@
 <template>
     <section class="topicSwitch">
         <button :class="[blogStore.isCurrentTopic(topic.name) ? 'on' : 'of']" v-for="topic in blogStore.topics" :key="topic.name"
-            v-html="topic.title" @click="blogStore.fetchPosts(topic.name)" />
+            v-html="topic.title" @click="blogStore.fetchData(topic.name)" />
     </section>
 </template>
 

@@ -12,6 +12,8 @@ export const useBlogStore = defineStore({
             { name: "themandalorian", title: "The Mandalorian" }
         ],
         currentTopic: "",
+        homeTitle: "",
+        blogTitle: "",
         posts: new Set(),
         categories: new Set(),
         tags: new Set(),
@@ -20,7 +22,7 @@ export const useBlogStore = defineStore({
         error: null,
     }),
     actions: {
-        async fetchPosts(db = "programming") {
+        async fetchData(db = "programming") {
             if (this.currentTopic !== db) {
                 this.$reset();
     
@@ -29,9 +31,9 @@ export const useBlogStore = defineStore({
                 try {
                     const response = await axios.get(import.meta.env.BASE_URL + db + ".json");
     
-                    response.data.forEach(post => this.posts.add(post));
+                    // response.data.forEach(post => this.posts.add(post));
     
-                    this.storeCategoriesAndPaths();
+                    this.storeDatabase(response.data);
                 }
                 catch (error) {
                     console.log(error)
@@ -40,21 +42,26 @@ export const useBlogStore = defineStore({
                 finally { this.isLoading = false; };
             };
         },
-        storeCategoriesAndPaths() {
-            this.posts.forEach(post => {
+        storeDatabase(data) {
+            this.homeTitle = data.homeTitle;
+            this.blogTitle = data.blogTitle;
+            
+            data.posts.forEach(post => {
                 this.categories.add(post.category);
 
                 post.tags.forEach(tag => this.tags.add(tag));
 
                 Object.assign(post, { path: `/${useStringEditor().normalizeString(post.category)}/${post.metadata.slug}` });
                 this.paths.add(post.path)
+
+                this.posts.add(post);
             });
         },
         async awaitDataLoading() {
             if (this.isLoading) {
                 await new Promise((resolve) => {
                     this.$onAction(({ after, name }) => {
-                        if (name === 'storeCategoriesAndPaths') after(() => resolve());
+                        if (name === 'storeDatabase') after(() => resolve());
                     });
                 });
             };
@@ -125,6 +132,8 @@ export const useBlogStore = defineStore({
                 return filteredPosts;
             };
         },
-
+        isCurrentTopic: (state) => {
+            return (topic) => {return topic === state.currentTopic;}
+        }
     },
 });

@@ -18,7 +18,7 @@ import { useBlogStore } from './stores/blog';
 import { useHead } from '@unhead/vue';
 
 const blogStore = useBlogStore();
-blogStore.fetchPosts();
+blogStore.fetchData();
 
 useHead({
   titleTemplate: (title) => title ? title : "Mi Blog",
