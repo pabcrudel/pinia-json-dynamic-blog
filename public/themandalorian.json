@@ -1,142 +1,226 @@
-[
-    {
-        "name": "El código mandaloriano: La importancia de seguir tus propias reglas",
-        "navigation": {
-            "title": "Artículo 1",
-            "cta": "Descubre el camino del Mandaloriano"
-        },
-        "metadata": {
+{
+    "homeTitle": "Sumérgete en la galaxia de El Mandaloriano con nuestras noticias y curiosidades",
+    "blogTitle": "Descubre los secretos detrás de la serie más épica de Star Wars",
+    "posts": [
+        {
+            "name": "codigo-mandaloriano",
+            "navigation": {
+                "title": "El código mandaloriano: La importancia de seguir tus propias reglas",
+                "cta": "Descubre el camino del Mandaloriano"
+            },
+            "metadata": {
+                "title": "El código mandaloriano: La importancia de seguir tus propias reglas",
+                "description": "Exploramos el significado del código mandaloriano y su relación con la independencia y el honor.",
+                "slug": "codigo-mandaloriano-importancia-reglas"
+            },
+            "category": "El credo Mandaloriano",
+            "tags": [
+                "Honor",
+                "Independencia",
+                "Cultura Mandaloriana"
+            ],
             "title": "El código mandaloriano: La importancia de seguir tus propias reglas",
-            "description": "Exploramos el significado del código mandaloriano y su relación con la independencia y el honor.",
-            "slug": "codigo-mandaloriano-importancia-reglas"
+            "content": "Descubre el verdadero significado del código mandaloriano y cómo puede aplicarse a la vida cotidiana. Exploramos los valores fundamentales de la cultura mandaloriana, incluyendo la independencia, el honor y la lealtad. Aprende por qué es importante seguir tus propias reglas y cómo esto puede llevarte a la verdadera libertad."
         },
-        "category": "El credo Mandaloriano",
-        "tags": [
-            "Honor",
-            "Independencia",
-            "Cultura Mandaloriana"
-        ],
-        "title": "El código mandaloriano: La importancia de seguir tus propias reglas",
-        "content": "Descubre el verdadero significado del código mandaloriano y cómo puede aplicarse a la vida cotidiana. Exploramos los valores fundamentales de la cultura mandaloriana, incluyendo la independencia, el honor y la lealtad. Aprende por qué es importante seguir tus propias reglas y cómo esto puede llevarte a la verdadera libertad."
-    },
-    {
-        "name": "La armadura de Beskar de El Mandaloriano",
-        "navigation": {
-            "title": "La armadura de Beskar de El Mandaloriano",
-            "cta": "¡Descubre cómo la armadura de beskar ha marcado el camino del Mandaloriano!"
+        {
+            "name": "armadura-de-beskar",
+            "navigation": {
+                "title": "La armadura de Beskar de El Mandaloriano",
+                "cta": "¡Descubre cómo la armadura de beskar ha marcado el camino del Mandaloriano!"
+            },
+            "metadata": {
+                "title": "La armadura de Beskar de El Mandaloriano",
+                "description": "Descubre cómo la armadura de beskar ha marcado el camino del Mandaloriano",
+                "slug": "armadura-de-beskar"
+            },
+            "category": "El credo Mandaloriano",
+            "tags": [
+                "Armadura Mandaloriana",
+                "Cultura Mandaloriana",
+                "Resistencia"
+            ],
+            "title": "La armadura de Beskar de El Mandaloriano: un símbolo de la cultura Mandaloriana",
+            "content": "El uso de la armadura de beskar es uno de los elementos más distintivos de la cultura Mandaloriana y ha jugado un papel crucial en la historia del protagonista de la serie. Descubre cómo este material resistente ha marcado el camino del Mandaloriano y la importancia que tiene en su cultura."
         },
-        "metadata": {
-            "title": "La armadura de Beskar de El Mandaloriano",
-            "description": "Descubre cómo la armadura de beskar ha marcado el camino del Mandaloriano",
-            "slug": "la-armadura-de-beskar-de-el-mandaloriano"
+        {
+            "name": "mascara",
+            "navigation": {
+                "title": "La importancia de la máscara en El Mandaloriano",
+                "cta": "¡Descubre por qué la máscara es crucial para la identidad del Mandaloriano!"
+            },
+            "metadata": {
+                "title": "La importancia de la máscara en El Mandaloriano",
+                "description": "Descubre por qué la máscara es crucial para la identidad del Mandaloriano",
+                "slug": "importancia-de-la-mascara"
+            },
+            "category": "El credo Mandaloriano",
+            "tags": [
+                "Identidad",
+                "Cultura Mandaloriana",
+                "Protección"
+            ],
+            "title": "La importancia de la máscara en El Mandaloriano: más allá de la protección física",
+            "content": "La máscara también simboliza la protección de la identidad y las creencias del Mandaloriano. A través de ella, se ocultan los rasgos faciales del portador, impidiendo que otros puedan identificarlo fácilmente. Esto es crucial para los miembros de esta cultura, quienes consideran su identidad como un tesoro que debe ser protegido a toda costa."
         },
-        "category": "El credo Mandaloriano",
-        "tags": [
-            "Armadura",
-            "Cultura Mandaloriana",
-            "Resistencia"
-        ],
-        "title": "La armadura de Beskar de El Mandaloriano: un símbolo de la cultura Mandaloriana",
-        "content": "El uso de la armadura de beskar es uno de los elementos más distintivos de la cultura Mandaloriana y ha jugado un papel crucial en la historia del protagonista de la serie. Descubre cómo este material resistente ha marcado el camino del Mandaloriano y la importancia que tiene en su cultura."
-    },
-    {
-        "name": "La importancia de la máscara en El Mandaloriano",
-        "navigation": {
-            "title": "La importancia de la máscara en El Mandaloriano",
-            "cta": "¡Descubre por qué la máscara es crucial para la identidad del Mandaloriano!"
+        {
+            "name": "la-historia-del-beskar",
+            "navigation": {
+                "title": "La historia detrás del Beskar en El Mandaloriano",
+                "cta": "¡Descubre la fascinante historia detrás del metal más preciado de la galaxia!"
+            },
+            "metadata": {
+                "title": "La historia detrás del Beskar en El Mandaloriano",
+                "description": "Descubre la fascinante historia detrás del metal más preciado de la galaxia",
+                "slug": "historia-del-beskar"
+            },
+            "category": "El credo Mandaloriano",
+            "tags": [
+                "Metal precioso",
+                "Armadura Mandaloriana",
+                "Historia"
+            ],
+            "title": "La historia detrás del Beskar en El Mandaloriano: el metal más preciado de la galaxia",
+            "content": "El Beskar es un metal precioso que se encuentra únicamente en el planeta Mandalore y sus lunas. Desde tiempos antiguos, los mandalorianos han utilizado el Beskar para forjar armaduras y armas, convirtiéndose en una parte integral de su cultura y su identidad. Durante la Guerra de los Clones, el Imperio Galáctico confiscó gran parte del Beskar de los mandalorianos, lo que llevó a una escasez del metal y al aumento de su valor en el mercado negro. En El Mandaloriano, vemos al protagonista buscando desesperadamente Beskar para reparar su armadura y mantener su legado. La historia detrás del Beskar es fascinante y muestra la importancia que este metal tiene para los mandalorianos en la galaxia de Star Wars."
         },
-        "metadata": {
-            "title": "La importancia de la máscara en El Mandaloriano",
-            "description": "Descubre por qué la máscara es crucial para la identidad del Mandaloriano",
-            "slug": "la-importancia-de-la-mascara-en-el-mandaloriano"
+        {
+            "name": "importancia-cultural-del-beskar",
+            "navigation": {
+                "title": "La importancia cultural del beskar en la sociedad Mandaloriana",
+                "cta": "Descubre la relevancia del beskar en la cultura y tradiciones de los Mandalorianos"
+            },
+            "metadata": {
+                "title": "La importancia cultural del beskar en la sociedad Mandaloriana",
+                "description": "Descubre la relevancia del beskar en la cultura y tradiciones de los Mandalorianos",
+                "slug": "importancia-cultural-del-beskar-en-la-sociedad-mandaloriana"
+            },
+            "category": "El credo Mandaloriano",
+            "tags": [
+                "Metalurgia",
+                "Cultura",
+                "Simbolismo"
+            ],
+            "title": "La importancia cultural del beskar en la sociedad Mandaloriana",
+            "content": "El beskar es un metal de gran valor y poder en la cultura Mandaloriana. Además de su utilidad como armadura y protección, representa la fortaleza, el honor y la lealtad a la tradición. La forja y el tratamiento del beskar son procesos sagrados para los Mandalorianos, y su uso es reservado para aquellos que han demostrado su valía en combate y su compromiso con el credo Mandaloriano. Para ellos, el beskar es mucho más que un metal: es un símbolo de su identidad y su legado cultural, una muestra de su habilidad y su dedicación. En resumen, el beskar es una parte esencial de la cultura Mandaloriana y su preservación es vital para mantener su historia y tradiciones vivas."
         },
-        "category": "El credo Mandaloriano",
-        "tags": [
-            "Identidad",
-            "Cultura Mandaloriana",
-            "Protección"
-        ],
-        "title": "La importancia de la máscara en El Mandaloriano: más allá de la protección física",
-        "content": "La máscara también simboliza la protección de la identidad y las creencias del Mandaloriano. A través de ella, se ocultan los rasgos faciales del portador, impidiendo que otros puedan identificarlo fácilmente. Esto es crucial para los miembros de esta cultura, quienes consideran su identidad como un tesoro que debe ser protegido a toda costa."
-    },
-    {
-        "name": "El sable oscuro, la temible arma de los Mandalorianos Oscuros",
-        "navigation": {
+        {
+            "name": "proceso-de-obtencion-del-beskar",
+            "navigation": {
+                "title": "El proceso de obtención del beskar en El Mandaloriano",
+                "cta": "Descubre cómo los Mandalorianos obtienen el preciado beskar para sus armaduras"
+            },
+            "metadata": {
+                "title": "El proceso de obtención del beskar en El Mandaloriano",
+                "description": "Descubre cómo los Mandalorianos obtienen el preciado beskar para sus armaduras",
+                "slug": "proceso-de-obtencion-del-beskar"
+            },
+            "category": "El credo Mandaloriano",
+            "tags": [
+                "Armadura",
+                "Cultura Mandaloriana",
+                "Metalurgia"
+            ],
+            "title": "El proceso de obtención del beskar en El Mandaloriano",
+            "content": "El beskar es un metal valioso y duradero que es utilizado por los Mandalorianos para crear sus armaduras. El proceso de obtención del beskar es un rito sagrado y secreto que solo se lleva a cabo por los miembros más destacados del clan. Se extrae de las profundidades de la luna de Mandalore y luego se funde en hornos especiales con tecnología ancestral. Este metal es tan resistente que puede resistir los golpes de un sable láser, por lo que es altamente valorado en el universo de Star Wars."
+        },
+        {
+            "name": "el-forjador-en-la-tradicion-del-beskar",
+            "navigation": {
+                "title": "La importancia del forjador en la tradición del Beskar",
+                "cta": "Descubre el papel fundamental del forjador en la creación de las armaduras de beskar."
+            },
+            "metadata": {
+                "title": "La importancia del forjador en la tradición del Beskar",
+                "description": "Descubre el papel fundamental del forjador en la creación de las armaduras de beskar.",
+                "slug": "la-importancia-del-forjador-en-la-tradicion-del-beskar"
+            },
+            "category": "El credo Mandaloriano",
+            "tags": [
+                "Forjador",
+                "Armadura de Beskar",
+                "Tradición Mandaloriana"
+            ],
+            "title": "La importancia del forjador en la tradición del Beskar",
+            "content": "El beskar es un metal precioso y raro, pero su valor se multiplica al ser forjado por un verdadero maestro forjador, quien debe ser también un experto en la tradición y los rituales Mandalorianos. Es gracias a los forjadores que los guerreros Mandalorianos pueden portar armaduras indestructibles y representativas de su clan y cultura, siendo una parte esencial de la identidad Mandaloriana."
+        },
+        {
+            "name": "el-sable-oscuro-de-los-mandalorianos-oscuros",
+            "navigation": {
+                "title": "El sable oscuro, la temible arma de los Mandalorianos Oscuros",
+                "cta": "Descubre el poder letal del sable oscuro, la misteriosa arma de los Mandalorianos Oscuros."
+            },
+            "metadata": {
+                "title": "El sable oscuro, la temible arma de los Mandalorianos Oscuros",
+                "description": "Descubre el poder letal del sable oscuro, la misteriosa arma de los Mandalorianos Oscuros.",
+                "slug": "el-sable-oscuro-de-los-mandalorianos-oscuros"
+            },
+            "category": "Armas y Armaduras",
+            "tags": [
+                "Sable oscuro",
+                "Mandalorianos Oscuros",
+                "Armas Mandalorianas"
+            ],
             "title": "El sable oscuro, la temible arma de los Mandalorianos Oscuros",
-            "cta": "Descubre el poder letal del sable oscuro, la misteriosa arma de los Mandalorianos Oscuros."
+            "content": "El sable oscuro es una de las armas más letales y temibles del universo de Star Wars. Se trata de un arma exclusiva de los Mandalorianos Oscuros, una secta de guerreros que se separaron del resto de la cultura Mandaloriana hace muchos años. Poco se sabe sobre su origen o su funcionamiento, pero se cree que está hecho de un material desconocido y que tiene propiedades especiales que lo hacen más letal que cualquier otra arma. Solo unos pocos guerreros han sido capaces de dominar el sable oscuro y, por lo tanto, se considera una muestra de gran habilidad y poder dentro de la cultura Mandaloriana. Sin embargo, debido a su peligrosidad, el uso del sable oscuro ha sido prohibido por los líderes de los Mandalorianos desde hace siglos. A pesar de esto, algunos guerreros rebeldes han seguido utilizando esta arma en secreto, lo que ha llevado a una serie de conflictos y enfrentamientos dentro de la cultura Mandaloriana."
         },
-        "metadata": {
-            "title": "El sable oscuro, la temible arma de los Mandalorianos Oscuros",
-            "description": "Descubre el poder letal del sable oscuro, la misteriosa arma de los Mandalorianos Oscuros.",
-            "slug": "el-sable-oscuro-la-temible-arma-de-los-mandalorianos-oscuros"
-        },
-        "category": "Armas y Armaduras Mandalorianas",
-        "tags": [
-            "Sable oscuro",
-            "Mandalorianos Oscuros",
-            "Armas letales"
-        ],
-        "title": "El sable oscuro, la temible arma de los Mandalorianos Oscuros",
-        "content": "El sable oscuro es una de las armas más letales y temibles del universo de Star Wars. Se trata de un arma exclusiva de los Mandalorianos Oscuros, una secta de guerreros que se separaron del resto de la cultura Mandaloriana hace muchos años. Poco se sabe sobre su origen o su funcionamiento, pero se cree que está hecho de un material desconocido y que tiene propiedades especiales que lo hacen más letal que cualquier otra arma. Solo unos pocos guerreros han sido capaces de dominar el sable oscuro y, por lo tanto, se considera una muestra de gran habilidad y poder dentro de la cultura Mandaloriana. Sin embargo, debido a su peligrosidad, el uso del sable oscuro ha sido prohibido por los líderes de los Mandalorianos desde hace siglos. A pesar de esto, algunos guerreros rebeldes han seguido utilizando esta arma en secreto, lo que ha llevado a una serie de conflictos y enfrentamientos dentro de la cultura Mandaloriana."
-    },
-    {
-        "name": "Las pistolas blaster más icónicas de las armas mandalorianas",
-        "navigation": {
+        {
+            "name": "las-pistolas-blaster-mas-iconicas",
+            "navigation": {
+                "title": "Las pistolas blaster más icónicas de las armas mandalorianas",
+                "cta": "¡Descubre las armas más letales de la cultura Mandaloriana!"
+            },
+            "metadata": {
+                "title": "Las pistolas blaster más icónicas de las armas mandalorianas",
+                "description": "Descubre las armas más letales de la cultura Mandaloriana",
+                "slug": "las-pistolas-blaster-mas-iconicas"
+            },
+            "category": "Armas y Armaduras",
+            "tags": [
+                "Pistolas Blaster",
+                "Armas Mandalorianas",
+                "Cultura Mandaloriana"
+            ],
             "title": "Las pistolas blaster más icónicas de las armas mandalorianas",
-            "cta": "¡Descubre las armas más letales de la cultura Mandaloriana!"
+            "content": "Dentro del arsenal de las armas mandalorianas, las pistolas blaster destacan por su letalidad y precisión en el combate. Entre las más icónicas se encuentran la Westar-35, la cual ha sido utilizada por algunos de los Mandalorianos más famosos, como Jango Fett y Sabine Wren. También está la NN-14, conocida por su diseño elegante y su capacidad para disparar blásters en diferentes modos, desde disparos simples hasta ráfagas rápidas. Otra de las pistolas más destacadas es la EL-16, que cuenta con un diseño ergonómico y una precisión impresionante."
         },
-        "metadata": {
-            "title": "Las pistolas blaster más icónicas de las armas mandalorianas",
-            "description": "Descubre las armas más letales de la cultura Mandaloriana",
-            "slug": "las-pistolas-blaster-mas-iconicas-de-las-armas-mandalorianas"
+        {
+            "name": "evolucion-de-las-armas",
+            "navigation": {
+                "title": "La evolución de las armas Mandalorianas",
+                "cta": "¡Descubre cómo las armas y armaduras Mandalorianas han evolucionado a lo largo del tiempo!"
+            },
+            "metadata": {
+                "title": "La evolución de las armas Mandalorianas",
+                "description": "Descubre cómo las armas y armaduras Mandalorianas han evolucionado a lo largo del tiempo",
+                "slug": "evolucion-de-las-armas"
+            },
+            "category": "Armas y Armaduras",
+            "tags": [
+                "Historia",
+                "Tecnología",
+                "Cultura Mandaloriana"
+            ],
+            "title": "La evolución de las armas Mandalorianas: cómo la cultura y la tecnología han dado forma a estas armas",
+            "content": "A lo largo de la historia de los Mandalorianos, sus armas y armaduras han evolucionado para adaptarse a las necesidades cambiantes de la cultura y la tecnología. Desde las primitivas armas cuerpo a cuerpo hasta las armas de energía avanzadas, los Mandalorianos siempre han estado a la vanguardia de la tecnología de armamento. La cultura y la religión también han influido en el diseño de estas armas, con símbolos y adornos que representan la historia y la tradición de los Mandalorianos. En resumen, las armas y armaduras Mandalorianas son el resultado de una combinación única de cultura, tecnología y necesidades prácticas, lo que las convierte en algunas de las armas más efectivas y temidas de la galaxia."
         },
-        "category": "Armas y Armaduras Mandalorianas",
-        "tags": [
-            "Pistolas Blaster",
-            "Armas de Fuego",
-            "Cultura Mandaloriana"
-        ],
-        "title": "Las pistolas blaster más icónicas de las armas mandalorianas",
-        "content": "Dentro del arsenal de las armas mandalorianas, las pistolas blaster destacan por su letalidad y precisión en el combate. Entre las más icónicas se encuentran la Westar-35, la cual ha sido utilizada por algunos de los Mandalorianos más famosos, como Jango Fett y Sabine Wren. También está la NN-14, conocida por su diseño elegante y su capacidad para disparar blásters en diferentes modos, desde disparos simples hasta ráfagas rápidas. Otra de las pistolas más destacadas es la EL-16, que cuenta con un diseño ergonómico y una precisión impresionante."
-    },
-    {
-        "name": "La evolución de las armas Mandalorianas",
-        "navigation": {
-            "title": "La evolución de las armas Mandalorianas",
-            "cta": "¡Descubre cómo las armas y armaduras Mandalorianas han evolucionado a lo largo del tiempo!"
-        },
-        "metadata": {
-            "title": "La evolución de las armas Mandalorianas",
-            "description": "Descubre cómo las armas y armaduras Mandalorianas han evolucionado a lo largo del tiempo",
-            "slug": "la-evolucion-de-las-armas-mandalorianas"
-        },
-        "category": "Armas y Armaduras Mandalorianas",
-        "tags": [
-            "Historia",
-            "Tecnología",
-            "Cultura Mandaloriana"
-        ],
-        "title": "La evolución de las armas Mandalorianas: cómo la cultura y la tecnología han dado forma a estas armas",
-        "content": "A lo largo de la historia de los Mandalorianos, sus armas y armaduras han evolucionado para adaptarse a las necesidades cambiantes de la cultura y la tecnología. Desde las primitivas armas cuerpo a cuerpo hasta las armas de energía avanzadas, los Mandalorianos siempre han estado a la vanguardia de la tecnología de armamento. La cultura y la religión también han influido en el diseño de estas armas, con símbolos y adornos que representan la historia y la tradición de los Mandalorianos. En resumen, las armas y armaduras Mandalorianas son el resultado de una combinación única de cultura, tecnología y necesidades prácticas, lo que las convierte en algunas de las armas más efectivas y temidas de la galaxia."
-    },
-    {
-        "name": "La historia detrás del Beskar en El Mandaloriano",
-        "navigation": {
-            "title": "La historia detrás del Beskar en El Mandaloriano",
-            "cta": "¡Descubre la fascinante historia detrás del metal más preciado de la galaxia!"
-        },
-        "metadata": {
-            "title": "La historia detrás del Beskar en El Mandaloriano",
-            "description": "Descubre la fascinante historia detrás del metal más preciado de la galaxia",
-            "slug": "la-historia-detras-del-beskar-en-el-mandaloriano"
-        },
-        "category": "El credo Mandaloriano",
-        "tags": [
-            "Metal precioso",
-            "Armadura mandaloriana",
-            "Historia"
-        ],
-        "title": "La historia detrás del Beskar en El Mandaloriano: el metal más preciado de la galaxia",
-        "content": "El Beskar es un metal precioso que se encuentra únicamente en el planeta Mandalore y sus lunas. Desde tiempos antiguos, los mandalorianos han utilizado el Beskar para forjar armaduras y armas, convirtiéndose en una parte integral de su cultura y su identidad. Durante la Guerra de los Clones, el Imperio Galáctico confiscó gran parte del Beskar de los mandalorianos, lo que llevó a una escasez del metal y al aumento de su valor en el mercado negro. En El Mandaloriano, vemos al protagonista buscando desesperadamente Beskar para reparar su armadura y mantener su legado. La historia detrás del Beskar es fascinante y muestra la importancia que este metal tiene para los mandalorianos en la galaxia de Star Wars."
-    }
-]
+        {
+            "name": "estilos-de-combate",
+            "navigation": {
+                "title": "Descubre los estilos de combate con armas y armaduras Mandalorianas en El Mandaloriano",
+                "cta": "¿Quieres aprender más sobre los estilos de combate de los Mandalorianos? ¡Entra aquí!"
+            },
+            "metadata": {
+                "title": "Estilos de combate con armas y armaduras Mandalorianas en El Mandaloriano",
+                "description": "Aprende sobre los estilos de combate con armas y armaduras Mandalorianas en El Mandaloriano",
+                "slug": "estilos-de-combate"
+            },
+            "category": "Armas y Armaduras",
+            "tags": [
+                "Estilos de combate",
+                "Técnicas de lucha",
+                "Armas Mandalorianas"
+            ],
+            "title": "Estilos de combate con armas y armaduras Mandalorianas en El Mandaloriano: descubre las técnicas de lucha de los guerreros Mandalorianos",
+            "content": "La cultura Mandaloriana tiene un enfoque en el combate cuerpo a cuerpo y en el uso de armas de fuego, lo que ha llevado al desarrollo de estilos de combate únicos que son utilizados por los guerreros Mandalorianos en toda la galaxia. Desde la utilización del Beskar para defenderse de los disparos de bláster, hasta la lucha cuerpo a cuerpo con lanzas y espadas de luz, los Mandalorianos son conocidos por su habilidad en el campo de batalla. Descubre los diferentes estilos de combate que se utilizan en El Mandaloriano y aprende sobre las técnicas de lucha de los guerreros Mandalorianos."
+        }
+    ]
+}
