@@ -3,8 +3,7 @@
     <h1>Bienvenido a nuestro Blog</h1>
 
     <hr>
-    <button @click="blogStore.fetchPosts('programming');">Programacion</button>
-    <button @click="blogStore.fetchPosts('sciencefiction');">Ciencia ficcion</button>
+    <ChangeBlogTopic/>
     <hr>
     <LinkedSearchTermList :title="'Categorias'" :terms="blogStore.categories"/>
     <hr>
@@ -17,6 +16,7 @@
 import { useBlogStore } from '../stores/blog';
 
 import LinkedSearchTermList from '../components/LinkedSearchTermList.vue';
+import ChangeBlogTopic from '../components/ChangeBlogTopic.vue';
 
 const blogStore = useBlogStore();
 </script>
