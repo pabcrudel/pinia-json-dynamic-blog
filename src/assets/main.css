@@ -61,3 +61,17 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+#app .topicSwitch {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+#app .topicSwitch button {
+  border: 1px solid grey;
+  background: transparent;
+  color: hsl(160, 100%, 37%);
+}
+#app .topicSwitch button.on {
+  border-color: hsl(160, 100%, 37%);
+  color: grey;
+}
