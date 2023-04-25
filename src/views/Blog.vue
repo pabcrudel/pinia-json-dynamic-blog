@@ -1,6 +1,8 @@
 <template>
-  <h1>Explora nuestro Blog</h1>
+  <h1 v-html="blogStore.blogTitle"/>
 
+  <hr>
+  <ChangeBlogTopic/>
   <hr>
   <section class="searchSection">
     <header class="searchHeader">
@@ -24,6 +26,7 @@ import { useBlogStore } from '../stores/blog';
 import useStringEditor from '../composables/useStringEditor';
 
 import LinkedPostList from '../components/LinkedPostList .vue';
+import ChangeBlogTopic from '../components/ChangeBlogTopic.vue';
 
 const route = useRoute();
 

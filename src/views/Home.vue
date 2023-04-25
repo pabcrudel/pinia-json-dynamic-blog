@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Bienvenido a nuestro Blog</h1>
+    <h1 v-html="blogStore.homeTitle"/>
 
     <hr>
     <ChangeBlogTopic/>
