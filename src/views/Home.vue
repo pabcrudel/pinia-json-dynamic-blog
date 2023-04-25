@@ -1,7 +1,10 @@
 <template>
   <div class="home">
-    <h1>Bienvenido a nuestra Página de Programación</h1>
+    <h1>Bienvenido a nuestro Blog</h1>
 
+    <hr>
+    <button @click="blogStore.fetchPosts('programming');">Programacion</button>
+    <button @click="blogStore.fetchPosts('sciencefiction');">Ciencia ficcion</button>
     <hr>
     <LinkedSearchTermList :title="'Categorias'" :terms="blogStore.categories"/>
     <hr>

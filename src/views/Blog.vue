@@ -1,5 +1,5 @@
 <template>
-  <h1>Explora el mundo de la programación</h1>
+  <h1>Explora nuestro Blog</h1>
 
   <hr>
   <section class="searchSection">

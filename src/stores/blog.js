@@ -14,9 +14,11 @@ export const useBlogStore = defineStore({
         error: null,
     }),
     actions: {
-        async fetchPosts() {
+        async fetchPosts(db = "programming") {
+            this.$reset();
+
             try {
-                const response = await axios.get(import.meta.env.BASE_URL + "posts.json");
+                const response = await axios.get(import.meta.env.BASE_URL + db + ".json");
 
                 response.data.forEach(post => this.posts.add(post));
 

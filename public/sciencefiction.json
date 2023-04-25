@@ -1,0 +1,124 @@
+[
+    {
+        "name": "isaac-asimov-leyes-robotica",
+        "navigation": {
+            "title": "Las leyes de la robótica según Isaac Asimov",
+            "cta": "Asimov"
+        },
+        "metadata": {
+            "title": "El legado de Isaac Asimov en la ciencia ficción",
+            "description": "Conoce las leyes de la robótica de Isaac Asimov y su importancia en la ciencia ficción",
+            "slug": "isaac-asimov-leyes-robotica"
+        },
+        "category": "Escritores de ciencia ficción",
+        "tags": [
+            "Isaac Asimov",
+            "Leyes de la robótica",
+            "Ciencia ficción"
+        ],
+        "title": "Las leyes de la robótica según Isaac Asimov",
+        "content": "Isaac Asimov es uno de los escritores de ciencia ficción más reconocidos y sus leyes de la robótica son una de sus mayores contribuciones a la cultura popular. En este artículo, conocerás las tres leyes de la robótica y su importancia en la ciencia ficción. También hablaremos sobre cómo estas leyes han sido adaptadas en diferentes obras y su influencia en el desarrollo de la inteligencia artificial."
+    },
+    {
+        "name": "ray-bradbury-fahrenheit-451",
+        "navigation": {
+            "title": "La visión del futuro según Ray Bradbury en Fahrenheit 451",
+            "cta": "Bradbury"
+        },
+        "metadata": {
+            "title": "La obra maestra de Ray Bradbury en la ciencia ficción",
+            "description": "Descubre la visión del futuro de Ray Bradbury en su obra maestra Fahrenheit 451",
+            "slug": "ray-bradbury-fahrenheit-451"
+        },
+        "category": "Escritores de ciencia ficción",
+        "tags": [
+            "Ray Bradbury",
+            "Fahrenheit 451",
+            "Ciencia ficción"
+        ],
+        "title": "La visión del futuro según Ray Bradbury en Fahrenheit 451",
+        "content": "Fahrenheit 451 es una de las obras más emblemáticas de Ray Bradbury y una de las más influyentes en la ciencia ficción. En este artículo, exploraremos la visión del futuro de Bradbury en esta obra, centrada en una sociedad en la que los libros son prohibidos y quemados. Hablaremos sobre los temas principales de la novela, como la libertad de expresión, el papel de la tecnología en la sociedad y la lucha contra la opresión."
+    },
+    {
+        "name": "hg-wells-maquina-tiempo",
+        "navigation": {
+            "title": "H.G. Wells y La Máquina del Tiempo",
+            "cta": "Ciencia Ficción"
+        },
+        "metadata": {
+            "title": "H.G. Wells y su contribución a la ciencia ficción con La Máquina del Tiempo",
+            "description": "Descubre cómo H.G. Wells revolucionó la ciencia ficción con su novela La Máquina del Tiempo y cómo ha influido en la cultura popular",
+            "slug": "hg-wells-la-maquina-del-tiempo"
+        },
+        "category": "Escritores de Ciencia ficción",
+        "tags": [
+            "H.G. Wells",
+            "La Máquina del Tiempo",
+            "Ciencia Ficción"
+        ],
+        "title": "H.G. Wells y La Máquina del Tiempo",
+        "content": "H.G. Wells fue uno de los escritores más influyentes en el género de la ciencia ficción, y su obra más conocida, La Máquina del Tiempo, es un clásico del género. En este artículo, exploraremos cómo Wells revolucionó la ciencia ficción con esta novela, y cómo ha influido en la cultura popular desde su publicación en 1895. Hablaremos de los temas y conceptos que Wells introduce en la novela, como el viaje en el tiempo y la evolución de la humanidad, y cómo estos han sido retomados por otros autores y en otras obras de ciencia ficción. También hablaremos de la adaptación de la novela a otros medios, como el cine y la televisión."
+    },
+    {
+        "name": "1984",
+        "navigation": {
+            "title": "1984 de George Orwell",
+            "cta": "Más información"
+        },
+        "metadata": {
+            "title": "1984 de George Orwell: Una visión del futuro distópico",
+            "description": "Descubre cómo la obra maestra de George Orwell, 1984, nos presenta una visión aterradora de un futuro distópico donde el gobierno controla todo y la libertad individual es inexistente.",
+            "slug": "1984-george-orwell-futuro-distopico"
+        },
+        "category": "Futuros distópicos",
+        "tags": [
+            "literatura",
+            "política",
+            "control"
+        ],
+        "title": "1984 de George Orwell",
+        "content": "1984 es una novela escrita por George Orwell que nos presenta una visión aterradora de un futuro distópico. En este futuro, el gobierno controla todo y la libertad individual es inexistente. La novela sigue la historia de Winston Smith, un hombre que trabaja en el Ministerio de la Verdad y que comienza a cuestionar la verdad del gobierno. A medida que avanza la historia, se hace cada vez más evidente que la realidad es muy diferente a lo que el gobierno quiere que la gente crea."
+    },
+    {
+        "name": "Blade Runner",
+        "navigation": {
+            "title": "Blade Runner: Un futuro distópico",
+            "cta": "Más información"
+        },
+        "metadata": {
+            "title": "Blade Runner: Un futuro distópico",
+            "description": "Descubre cómo la película de ciencia ficción Blade Runner nos presenta un futuro distópico donde la tecnología y la inteligencia artificial han avanzado tanto que la humanidad ha perdido su lugar en el mundo.",
+            "slug": "blade-runner-futuro-distopico"
+        },
+        "category": "Futuros distópicos",
+        "tags": [
+            "ciencia ficción",
+            "inteligencia artificial",
+            "futuro"
+        ],
+        "title": "Blade Runner",
+        "content": "Blade Runner es una película de ciencia ficción que nos presenta un futuro distópico donde la tecnología y la inteligencia artificial han avanzado tanto que la humanidad ha perdido su lugar en el mundo. La historia sigue a Rick Deckard, un Blade Runner, cuya misión es retirar a replicantes, androides creados por la compañía Tyrell Corporation. La película explora temas como la identidad, la humanidad y la moralidad en un mundo donde la tecnología ha avanzado más allá de lo que se puede imaginar."
+    },
+    {
+        "name": "los-juegos-del-hambre",
+        "navigation": {
+            "title": "Distopías: Los Juegos del Hambre",
+            "cta": "Distopías"
+        },
+        "metadata": {
+            "title": "Los Juegos del Hambre: Una distopía sobre la opresión y la resistencia",
+            "description": "Una reseña sobre la famosa saga de libros y películas que explora temas como la opresión política, la desigualdad social y la resistencia a través de una competencia brutal de supervivencia",
+            "slug": "los-juegos-del-hambre-distopia"
+        },
+        "category": "Futuros distópicos",
+        "tags": [
+            "futuro",
+            "opresión",
+            "resistencia",
+            "competencia",
+            "supervivencia"
+        ],
+        "title": "La resistencia en Los Juegos del Hambre",
+        "content": "En Los Juegos del Hambre, Suzanne Collins crea una distopía en la que el gobierno central oprime y explota a las personas en los distritos más pobres, mientras que las élites disfrutan de una vida lujosa en la capital. La competencia anual de los Juegos del Hambre es un símbolo de esta desigualdad, en la que los niños y niñas de los distritos son obligados a pelear a muerte en una arena para el entretenimiento de los ricos. Pero en medio de esta opresión, surge una resistencia liderada por Katniss Everdeen, quien se convierte en el símbolo de la lucha contra el gobierno y la búsqueda de la justicia. A través de los personajes y las situaciones que se presentan en la saga, Collins presenta una crítica social sobre temas como la desigualdad, la opresión, la manipulación mediática y la resistencia ante un sistema injusto. En resumen, Los Juegos del Hambre es una obra que invita a reflexionar sobre la realidad social y política de nuestro mundo a través de la lente de la ficción distópica."
+    }
+]
