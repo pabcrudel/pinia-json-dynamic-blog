@@ -6,6 +6,12 @@ import useStringEditor from '../composables/useStringEditor';
 export const useBlogStore = defineStore({
     id: 'blog',
     state: () => ({
+        topics: [
+            { name: "programming", title: "Programación" },
+            { name: "sciencefiction", title: "Ciencia Ficción" },
+            { name: "themandalorian", title: "The Mandalorian" }
+        ],
+        currentTopic: "",
         posts: new Set(),
         categories: new Set(),
         tags: new Set(),
@@ -15,20 +21,24 @@ export const useBlogStore = defineStore({
     }),
     actions: {
         async fetchPosts(db = "programming") {
-            this.$reset();
-
-            try {
-                const response = await axios.get(import.meta.env.BASE_URL + db + ".json");
-
-                response.data.forEach(post => this.posts.add(post));
-
-                this.storeCategoriesAndPaths();
-            }
-            catch (error) {
-                console.log(error)
-                this.error = error;
-            }
-            finally { this.isLoading = false; };
+            if (this.currentTopic !== db) {
+                this.$reset();
+    
+                this.currentTopic = db;
+    
+                try {
+                    const response = await axios.get(import.meta.env.BASE_URL + db + ".json");
+    
+                    response.data.forEach(post => this.posts.add(post));
+    
+                    this.storeCategoriesAndPaths();
+                }
+                catch (error) {
+                    console.log(error)
+                    this.error = error;
+                }
+                finally { this.isLoading = false; };
+            };
         },
         storeCategoriesAndPaths() {
             this.posts.forEach(post => {
@@ -102,9 +112,9 @@ export const useBlogStore = defineStore({
             return (prop, value, related = true) => {
                 const filteredPosts = new Set();
 
-                const shouldAdd = related ? 
-                post => post[prop] === value : 
-                post => post[prop] !== value;
+                const shouldAdd = related ?
+                    post => post[prop] === value :
+                    post => post[prop] !== value;
 
                 state.posts.forEach(post => {
                     if (shouldAdd(post)) {
