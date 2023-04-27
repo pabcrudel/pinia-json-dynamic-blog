@@ -30,9 +30,7 @@ export const useBlogStore = defineStore({
     
                 try {
                     const response = await axios.get(import.meta.env.BASE_URL + db + ".json");
-    
-                    // response.data.forEach(post => this.posts.add(post));
-    
+
                     this.storeDatabase(response.data);
                 }
                 catch (error) {
