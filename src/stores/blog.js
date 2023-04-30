@@ -25,11 +25,15 @@ export const useBlogStore = defineStore({
         async fetchData(db = "programming") {
             if (this.currentTopic !== db) {
                 this.$reset();
-    
+
                 this.currentTopic = db;
-    
+
+                const path = import.meta.env.BASE_URL + db;
+
                 try {
-                    const response = await axios.get(import.meta.env.BASE_URL + db + ".json");
+                    this.addStyle(path + '/main.css');
+                    
+                    const response = await axios.get(path + "/posts.json");
 
                     this.storeDatabase(response.data);
                 }
@@ -40,10 +44,22 @@ export const useBlogStore = defineStore({
                 finally { this.isLoading = false; };
             };
         },
+        addStyle(url) {
+            const id = 'dynamic-style';
+
+            const existingLink = document.querySelector(`link.${id}`);
+            if (existingLink) existingLink.remove();
+
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.className  = id
+            link.href = url;
+            document.head.appendChild(link);
+        },
         storeDatabase(data) {
             this.homeTitle = data.homeTitle;
             this.blogTitle = data.blogTitle;
-            
+
             data.posts.forEach(post => {
                 this.categories.add(post.category);
 
@@ -131,7 +147,7 @@ export const useBlogStore = defineStore({
             };
         },
         isCurrentTopic: (state) => {
-            return (topic) => {return topic === state.currentTopic;}
+            return (topic) => { return topic === state.currentTopic; }
         }
     },
 });
