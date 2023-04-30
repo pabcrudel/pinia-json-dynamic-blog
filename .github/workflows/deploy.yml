@@ -13,10 +13,18 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install -g clean-css-cli
 
       - name: Build project
         run: npm run build
+
+      - name: Minify public css
+        run: |
+          while read -d $'\0' file; do
+            cleancss "$file" -o "$file" --compatibility "ie >= 11, Edge >= 12, Firefox >= 2, Chrome >= 4, Safari >= 3.1, Opera >= 15, iOS >= 3.2"
+          done < <(find . -type f -name "*.css")
 
       - name: Generate 404.html
         run: |
