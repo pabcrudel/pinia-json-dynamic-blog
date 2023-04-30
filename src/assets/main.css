@@ -1,77 +1,97 @@
-@import './base.css';
-#app {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: rgba(235, 235, 235, 0.64);
+  background: #181818;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
 }
-#app a,
-#app .green {
+body #app a,
+body #app .green {
   text-decoration: none;
-  color: hsl(160, 100%, 37%);
+  color: var(--my-color);
   transition: 0.4s;
 }
-#app nav {
+body #app nav {
   display: flex;
   gap: 1rem;
 }
-#app hr {
+body #app hr {
   margin: 1rem 0;
 }
-#app .searchSection header.searchHeader {
+body #app .searchSection header.searchHeader {
   margin-bottom: 1rem;
 }
-#app .searchSection header.searchHeader input {
+body #app .searchSection header.searchHeader input {
   width: 320px;
 }
-#app .linkedPostList,
-#app .linkedSearchTermList {
+body #app .linkedPostList,
+body #app .linkedSearchTermList {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-#app .linkedPostList .list,
-#app .linkedSearchTermList .list {
+body #app .linkedPostList .list,
+body #app .linkedSearchTermList .list {
   display: flex;
   flex-direction: column;
 }
-#app .linkedPostList .list {
+body #app .linkedPostList .list {
   gap: 0.5rem;
 }
-#app .linkedSearchTermList .list {
+body #app .linkedSearchTermList .list {
   gap: 0.25rem;
 }
-#app .linkedSearchTermList.post .list {
+body #app .linkedSearchTermList.post .list {
   flex-direction: row;
   font-size: small;
   flex-wrap: wrap;
 }
-#app .linkedSearchTermList.post .list a {
+body #app .linkedSearchTermList.post .list a {
   border: 1px solid grey;
   padding: 0 0.3rem;
 }
-#app .home a {
+body #app .home a {
   display: block;
 }
-#app .home h2 {
+body #app .home h2 {
   -webkit-text-decoration: underline lightblue;
           text-decoration: underline lightblue;
 }
-#app .home .linkedSearchTermList.columns .list {
+body #app .home .linkedSearchTermList.columns .list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-#app .topicSwitch {
+body #app .topicSwitch {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
-#app .topicSwitch button {
+body #app .topicSwitch button {
   border: 1px solid grey;
   background: transparent;
-  color: hsl(160, 100%, 37%);
+  color: var(--my-color);
 }
-#app .topicSwitch button.on {
-  border-color: hsl(160, 100%, 37%);
+body #app .topicSwitch button.on {
+  border-color: var(--my-color);
   color: grey;
 }

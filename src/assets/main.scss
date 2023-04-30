@@ -1,104 +1,123 @@
-@import './base.css';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
 
-$green: hsla(160, 100%, 37%, 1);
+body {
+  min-height: 100vh;
+  color: rgba(235, 235, 235, 0.64);
+  background: #181818;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-#app {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-
-    font-weight: normal;
-
-    a,
-    .green {
-        text-decoration: none;
-        color: $green;
-        transition: 0.4s;
-    }
-
-    nav {
-        display: flex;
-        gap: 1rem;
-    }
-
-    hr {
-        margin: 1rem 0;
-    }
-
-    .searchSection header.searchHeader {
-        margin-bottom: 1rem;
-
-        input {
-            width: 320px;
-        }
-    }
-
-    .linkedPostList,
-    .linkedSearchTermList {
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-
-        .list {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    .linkedPostList {
-        .list {
-            gap: .5rem;
-        }
-    }
-
-    .linkedSearchTermList {
-        .list {
-            gap: .25rem;
-        }
-
-        &.post .list {
-            flex-direction: row;
-            font-size: small;
-            flex-wrap: wrap;
-
-            a {
-                border: 1px solid grey;
-                padding: 0 .3rem;
-            }
-        }
-    }
-
-    .home {
-        a {
-            display: block;
-        }
-
-        h2 {
-            text-decoration: underline lightblue;
-        }
-
-        .linkedSearchTermList.columns {
-            .list {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            }
-        }
-    }
-
-    .topicSwitch {
-        display: flex;
-        flex-direction: row;
-        gap: .5rem;
-
-        button {
-            border: 1px solid grey;
-            background: transparent;
-            color: $green;
-
-            &.on {
-                border-color: $green;
-                color: grey;
-            }
-        }
-    }
+  #app {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem;
+  
+      font-weight: normal;
+  
+      a,
+      .green {
+          text-decoration: none;
+          color: var(--my-color);
+          transition: 0.4s;
+      }
+  
+      nav {
+          display: flex;
+          gap: 1rem;
+      }
+  
+      hr {
+          margin: 1rem 0;
+      }
+  
+      .searchSection header.searchHeader {
+          margin-bottom: 1rem;
+  
+          input {
+              width: 320px;
+          }
+      }
+  
+      .linkedPostList,
+      .linkedSearchTermList {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem;
+  
+          .list {
+              display: flex;
+              flex-direction: column;
+          }
+      }
+  
+      .linkedPostList {
+          .list {
+              gap: .5rem;
+          }
+      }
+  
+      .linkedSearchTermList {
+          .list {
+              gap: .25rem;
+          }
+  
+          &.post .list {
+              flex-direction: row;
+              font-size: small;
+              flex-wrap: wrap;
+  
+              a {
+                  border: 1px solid grey;
+                  padding: 0 .3rem;
+              }
+          }
+      }
+  
+      .home {
+          a {
+              display: block;
+          }
+  
+          h2 {
+              text-decoration: underline lightblue;
+          }
+  
+          .linkedSearchTermList.columns {
+              .list {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              }
+          }
+      }
+  
+      .topicSwitch {
+          display: flex;
+          flex-direction: row;
+          gap: .5rem;
+  
+          button {
+              border: 1px solid grey;
+              background: transparent;
+              color: var(--my-color);
+  
+              &.on {
+                  border-color: var(--my-color);
+                  color: grey;
+              }
+          }
+      }
+  }
 }
